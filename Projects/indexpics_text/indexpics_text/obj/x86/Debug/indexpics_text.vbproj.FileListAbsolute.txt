@@ -1,0 +1,22 @@
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\indexpics_text\bin\Debug\indexpics_text.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\indexpics_text\bin\Debug\indexpics_text.pdb
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\indexpics_text\bin\Debug\indexpics_text.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\indexpics_text\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\indexpics_text\obj\x86\Debug\indexpics_text.Form1.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\indexpics_text\obj\x86\Debug\indexpics_text.Resources.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\indexpics_text\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\indexpics_text\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\indexpics_text\obj\x86\Debug\indexpics_text.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\indexpics_text\obj\x86\Debug\indexpics_text.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\indexpics_text\obj\x86\Debug\indexpics_text.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\indexpics_text\indexpics_text\obj\x86\Debug\indexpics_text.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\indexpics_text\indexpics_text\obj\x86\Debug\indexpics_text.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\indexpics_text\indexpics_text\obj\x86\Debug\indexpics_text.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\indexpics_text\indexpics_text\bin\Debug\indexpics_text.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\indexpics_text\indexpics_text\bin\Debug\indexpics_text.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\indexpics_text\indexpics_text\bin\Debug\indexpics_text.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\indexpics_text\indexpics_text\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\indexpics_text\indexpics_text\obj\x86\Debug\indexpics_text.Form1.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\indexpics_text\indexpics_text\obj\x86\Debug\indexpics_text.Resources.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\indexpics_text\indexpics_text\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\indexpics_text\indexpics_text\obj\x86\Debug\GenerateResource.write.1.tlog

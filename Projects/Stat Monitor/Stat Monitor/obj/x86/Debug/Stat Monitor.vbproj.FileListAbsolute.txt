@@ -1,0 +1,11 @@
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Stat Monitor\Stat Monitor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Stat Monitor\Stat Monitor\obj\x86\Debug\Stat_Monitor.frmMain.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Stat Monitor\Stat Monitor\obj\x86\Debug\Stat_Monitor.Resources.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Stat Monitor\Stat Monitor\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Stat Monitor\Stat Monitor\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Stat Monitor\Stat Monitor\bin\Debug\Stat Monitor.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Stat Monitor\Stat Monitor\bin\Debug\Stat Monitor.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Stat Monitor\Stat Monitor\bin\Debug\Stat Monitor.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Stat Monitor\Stat Monitor\obj\x86\Debug\Stat Monitor.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Stat Monitor\Stat Monitor\obj\x86\Debug\Stat Monitor.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Stat Monitor\Stat Monitor\obj\x86\Debug\Stat Monitor.pdb

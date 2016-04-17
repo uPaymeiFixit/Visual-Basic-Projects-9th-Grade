@@ -1,0 +1,22 @@
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\SpaceInvaders\bin\Debug\SpaceInvaders.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\SpaceInvaders\bin\Debug\SpaceInvaders.pdb
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\SpaceInvaders\bin\Debug\SpaceInvaders.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\SpaceInvaders\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\SpaceInvaders\obj\x86\Debug\SpaceInvaders.Form1.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\SpaceInvaders\obj\x86\Debug\SpaceInvaders.Resources.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\SpaceInvaders\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\SpaceInvaders\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\SpaceInvaders\obj\x86\Debug\SpaceInvaders.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\SpaceInvaders\obj\x86\Debug\SpaceInvaders.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\SpaceInvaders\obj\x86\Debug\SpaceInvaders.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\SpaceInvaders\SpaceInvaders\obj\x86\Debug\SpaceInvaders.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\SpaceInvaders\SpaceInvaders\obj\x86\Debug\SpaceInvaders.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\SpaceInvaders\SpaceInvaders\obj\x86\Debug\SpaceInvaders.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\SpaceInvaders\SpaceInvaders\bin\Debug\SpaceInvaders.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\SpaceInvaders\SpaceInvaders\bin\Debug\SpaceInvaders.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\SpaceInvaders\SpaceInvaders\bin\Debug\SpaceInvaders.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\SpaceInvaders\SpaceInvaders\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\SpaceInvaders\SpaceInvaders\obj\x86\Debug\SpaceInvaders.Resources.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\SpaceInvaders\SpaceInvaders\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\SpaceInvaders\SpaceInvaders\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\SpaceInvaders\SpaceInvaders\obj\x86\Debug\SpaceInvaders.frmMain.resources

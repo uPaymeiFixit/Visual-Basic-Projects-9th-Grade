@@ -1,0 +1,27 @@
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Blocks\bin\Debug\Blocks.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Blocks\bin\Debug\Blocks.pdb
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Blocks\bin\Debug\Blocks.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Blocks\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Blocks\obj\x86\Debug\Blocks.frmMain.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Blocks\obj\x86\Debug\Blocks.Resources.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Blocks\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Blocks\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Blocks\obj\x86\Debug\Blocks.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Blocks\obj\x86\Debug\Blocks.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Blocks\obj\x86\Debug\Blocks.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Blocks\Blocks\obj\x86\Debug\Blocks.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Blocks\Blocks\obj\x86\Debug\Blocks.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Blocks\Blocks\obj\x86\Debug\Blocks.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Blocks\Blocks\bin\Debug\Blocks.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Blocks\Blocks\bin\Debug\Blocks.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Blocks\Blocks\bin\Debug\Blocks.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Blocks\Blocks\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Blocks\Blocks\obj\x86\Debug\Blocks.Resources.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Blocks\Blocks\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Blocks\Blocks\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\Documents\Visual Studio 2010\Projects\Blocks\Blocks\obj\x86\Debug\Blocks.frmCharactersList.resources
+C:\Users\Josh Gibbs\Documents\Visual Studio 2010\Projects\Blocks\Blocks\obj\x86\Debug\Blocks.frmGameOver.resources
+C:\Users\Josh Gibbs\Documents\Visual Studio 2010\Projects\Blocks\Blocks\obj\x86\Debug\Blocks.frmGameplay.resources
+C:\Users\Josh Gibbs\Documents\Visual Studio 2010\Projects\Blocks\Blocks\obj\x86\Debug\Blocks.frmSelectedCharacterInfo.resources
+C:\Users\Josh Gibbs\Documents\Visual Studio 2010\Projects\Blocks\Blocks\obj\x86\Debug\Blocks.frmStartMenu.resources
+C:\Users\Josh Gibbs\Documents\Visual Studio 2010\Projects\Blocks\Blocks\obj\x86\Debug\Blocks.frmTransparantLayer.resources

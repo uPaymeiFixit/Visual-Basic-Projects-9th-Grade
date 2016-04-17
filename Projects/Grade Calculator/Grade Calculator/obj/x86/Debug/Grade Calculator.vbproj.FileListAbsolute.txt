@@ -1,0 +1,22 @@
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Grade Calculator\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Grade Calculator\obj\x86\Debug\Grade_Calculator.frmMain.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Grade Calculator\obj\x86\Debug\Grade_Calculator.Resources.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Grade Calculator\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Grade Calculator\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Grade Calculator\bin\Debug\Grade Calculator.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Grade Calculator\bin\Debug\Grade Calculator.pdb
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Grade Calculator\bin\Debug\Grade Calculator.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Grade Calculator\obj\x86\Debug\Grade Calculator.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Grade Calculator\obj\x86\Debug\Grade Calculator.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Grade Calculator\obj\x86\Debug\Grade Calculator.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Grade Calculator\Grade Calculator\obj\x86\Debug\Grade Calculator.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Grade Calculator\Grade Calculator\obj\x86\Debug\Grade Calculator.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Grade Calculator\Grade Calculator\obj\x86\Debug\Grade Calculator.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Grade Calculator\Grade Calculator\bin\Debug\Grade Calculator.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Grade Calculator\Grade Calculator\bin\Debug\Grade Calculator.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Grade Calculator\Grade Calculator\bin\Debug\Grade Calculator.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Grade Calculator\Grade Calculator\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Grade Calculator\Grade Calculator\obj\x86\Debug\Grade_Calculator.frmMain.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Grade Calculator\Grade Calculator\obj\x86\Debug\Grade_Calculator.Resources.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Grade Calculator\Grade Calculator\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Grade Calculator\Grade Calculator\obj\x86\Debug\GenerateResource.write.1.tlog

@@ -1,0 +1,45 @@
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\SlotsMachine\SlotsMachine\bin\Debug\SlotsMachine.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\SlotsMachine\SlotsMachine\bin\Debug\SlotsMachine.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\SlotsMachine\SlotsMachine\bin\Debug\SlotsMachine.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\SlotsMachine\SlotsMachine\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\SlotsMachine\SlotsMachine\obj\x86\Debug\SlotsMachine.frmMain.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\SlotsMachine\SlotsMachine\obj\x86\Debug\SlotsMachine.Resources.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\SlotsMachine\SlotsMachine\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\SlotsMachine\SlotsMachine\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\SlotsMachine\SlotsMachine\obj\x86\Debug\SlotsMachine.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\SlotsMachine\SlotsMachine\obj\x86\Debug\SlotsMachine.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\SlotsMachine\SlotsMachine\obj\x86\Debug\SlotsMachine.pdb
+C:\Users\Josh Gibbs\Desktop\SlotsMachine\SlotsMachine\obj\x86\Debug\SlotsMachine.exe
+C:\Users\Josh Gibbs\Desktop\SlotsMachine\SlotsMachine\obj\x86\Debug\SlotsMachine.xml
+C:\Users\Josh Gibbs\Desktop\SlotsMachine\SlotsMachine\obj\x86\Debug\SlotsMachine.pdb
+C:\Users\Josh Gibbs\Desktop\SlotsMachine\SlotsMachine\bin\Debug\SlotsMachine.exe
+C:\Users\Josh Gibbs\Desktop\SlotsMachine\SlotsMachine\bin\Debug\SlotsMachine.pdb
+C:\Users\Josh Gibbs\Desktop\SlotsMachine\SlotsMachine\bin\Debug\SlotsMachine.xml
+C:\Users\Josh Gibbs\Desktop\SlotsMachine\SlotsMachine\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\Desktop\SlotsMachine\SlotsMachine\obj\x86\Debug\SlotsMachine.frmMain.resources
+C:\Users\Josh Gibbs\Desktop\SlotsMachine\SlotsMachine\obj\x86\Debug\SlotsMachine.Resources.resources
+C:\Users\Josh Gibbs\Desktop\SlotsMachine\SlotsMachine\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\Desktop\SlotsMachine\SlotsMachine\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Documents\GITA\Projects 4-12-10\SlotsMachine\SlotsMachine\obj\x86\Debug\SlotsMachine.exe
+E:\Documents\GITA\Projects 4-12-10\SlotsMachine\SlotsMachine\obj\x86\Debug\SlotsMachine.xml
+E:\Documents\GITA\Projects 4-12-10\SlotsMachine\SlotsMachine\obj\x86\Debug\SlotsMachine.pdb
+E:\Documents\GITA\Projects 4-12-10\SlotsMachine\SlotsMachine\bin\Debug\SlotsMachine.exe
+E:\Documents\GITA\Projects 4-12-10\SlotsMachine\SlotsMachine\bin\Debug\SlotsMachine.pdb
+E:\Documents\GITA\Projects 4-12-10\SlotsMachine\SlotsMachine\bin\Debug\SlotsMachine.xml
+E:\Documents\GITA\Projects 4-12-10\SlotsMachine\SlotsMachine\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Documents\GITA\Projects 4-12-10\SlotsMachine\SlotsMachine\obj\x86\Debug\SlotsMachine.frmMain.resources
+E:\Documents\GITA\Projects 4-12-10\SlotsMachine\SlotsMachine\obj\x86\Debug\SlotsMachine.Resources.resources
+E:\Documents\GITA\Projects 4-12-10\SlotsMachine\SlotsMachine\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Documents\GITA\Projects 4-12-10\SlotsMachine\SlotsMachine\obj\x86\Debug\GenerateResource.write.1.tlog
+X:\Documents\GITA\Projects 4-12-10\SlotsMachine\SlotsMachine\obj\x86\Debug\SlotsMachine.exe
+X:\Documents\GITA\Projects 4-12-10\SlotsMachine\SlotsMachine\obj\x86\Debug\SlotsMachine.xml
+X:\Documents\GITA\Projects 4-12-10\SlotsMachine\SlotsMachine\obj\x86\Debug\SlotsMachine.pdb
+X:\Documents\GITA\Projects 4-12-10\SlotsMachine\SlotsMachine\bin\Debug\SlotsMachine.exe
+X:\Documents\GITA\Projects 4-12-10\SlotsMachine\SlotsMachine\bin\Debug\SlotsMachine.pdb
+X:\Documents\GITA\Projects 4-12-10\SlotsMachine\SlotsMachine\bin\Debug\SlotsMachine.xml
+X:\Documents\GITA\Projects 4-12-10\SlotsMachine\SlotsMachine\obj\x86\Debug\ResolveAssemblyReference.cache
+X:\Documents\GITA\Projects 4-12-10\SlotsMachine\SlotsMachine\obj\x86\Debug\SlotsMachine.frmMain.resources
+X:\Documents\GITA\Projects 4-12-10\SlotsMachine\SlotsMachine\obj\x86\Debug\SlotsMachine.Resources.resources
+X:\Documents\GITA\Projects 4-12-10\SlotsMachine\SlotsMachine\obj\x86\Debug\GenerateResource.read.1.tlog
+X:\Documents\GITA\Projects 4-12-10\SlotsMachine\SlotsMachine\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\Documents\Visual Studio 2010\Projects\SlotsMachine\SlotsMachine\obj\x86\Debug\GenerateResource.write.552.tlog

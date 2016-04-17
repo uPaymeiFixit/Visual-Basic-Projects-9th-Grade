@@ -1,0 +1,23 @@
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\StrobeLight\bin\Debug\StrobeLight.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\StrobeLight\bin\Debug\StrobeLight.pdb
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\StrobeLight\bin\Debug\StrobeLight.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\StrobeLight\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\StrobeLight\obj\x86\Debug\StrobeLight.frmMain.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\StrobeLight\obj\x86\Debug\StrobeLight.Resources.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\StrobeLight\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\StrobeLight\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\StrobeLight\obj\x86\Debug\StrobeLight.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\StrobeLight\obj\x86\Debug\StrobeLight.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\StrobeLight\obj\x86\Debug\StrobeLight.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\StrobeLight\StrobeLight\obj\x86\Debug\StrobeLight.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\StrobeLight\StrobeLight\obj\x86\Debug\StrobeLight.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\StrobeLight\StrobeLight\obj\x86\Debug\StrobeLight.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\StrobeLight\StrobeLight\bin\Debug\StrobeLight.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\StrobeLight\StrobeLight\bin\Debug\StrobeLight.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\StrobeLight\StrobeLight\bin\Debug\StrobeLight.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\StrobeLight\StrobeLight\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\StrobeLight\StrobeLight\obj\x86\Debug\StrobeLight.frmMain.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\StrobeLight\StrobeLight\obj\x86\Debug\StrobeLight.Resources.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\StrobeLight\StrobeLight\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\StrobeLight\StrobeLight\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\StrobeLight\StrobeLight\obj\x86\Debug\StrobeLight.frmStart.resources

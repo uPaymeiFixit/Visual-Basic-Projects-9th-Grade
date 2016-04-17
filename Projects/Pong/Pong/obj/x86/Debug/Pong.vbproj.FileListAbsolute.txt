@@ -1,0 +1,35 @@
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Pong\bin\Debug\Pong.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Pong\bin\Debug\Pong.pdb
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Pong\bin\Debug\Pong.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Pong\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Pong\obj\x86\Debug\Pong.frmMain.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Pong\obj\x86\Debug\Pong.Resources.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Pong\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Pong\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Pong\obj\x86\Debug\Pong.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Pong\obj\x86\Debug\Pong.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Pong\obj\x86\Debug\Pong.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Pong\Pong\obj\x86\Debug\Pong.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Pong\Pong\obj\x86\Debug\Pong.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Pong\Pong\obj\x86\Debug\Pong.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Pong\Pong\bin\Debug\Pong.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Pong\Pong\bin\Debug\Pong.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Pong\Pong\bin\Debug\Pong.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Pong\Pong\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Pong\Pong\obj\x86\Debug\Pong.frmMain.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Pong\Pong\obj\x86\Debug\Pong.Resources.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Pong\Pong\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Pong\Pong\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\Documents\Visual Studio 2010\Projects\Pong\Pong\obj\x86\Debug\Pong.fmrStart.resources
+\\psf\Home\Documents\Visual Studio 2010\Projects\Pong\Pong\obj\x86\Debug\Pong.exe
+\\psf\Home\Documents\Visual Studio 2010\Projects\Pong\Pong\obj\x86\Debug\Pong.xml
+\\psf\Home\Documents\Visual Studio 2010\Projects\Pong\Pong\obj\x86\Debug\Pong.pdb
+\\psf\Home\Documents\Visual Studio 2010\Projects\Pong\Pong\bin\Debug\Pong.exe
+\\psf\Home\Documents\Visual Studio 2010\Projects\Pong\Pong\bin\Debug\Pong.pdb
+\\psf\Home\Documents\Visual Studio 2010\Projects\Pong\Pong\bin\Debug\Pong.xml
+\\psf\Home\Documents\Visual Studio 2010\Projects\Pong\Pong\obj\x86\Debug\ResolveAssemblyReference.cache
+\\psf\Home\Documents\Visual Studio 2010\Projects\Pong\Pong\obj\x86\Debug\Pong.fmrStart.resources
+\\psf\Home\Documents\Visual Studio 2010\Projects\Pong\Pong\obj\x86\Debug\Pong.frmMain.resources
+\\psf\Home\Documents\Visual Studio 2010\Projects\Pong\Pong\obj\x86\Debug\Pong.Resources.resources
+\\psf\Home\Documents\Visual Studio 2010\Projects\Pong\Pong\obj\x86\Debug\GenerateResource.read.1.tlog
+\\psf\Home\Documents\Visual Studio 2010\Projects\Pong\Pong\obj\x86\Debug\GenerateResource.write.1.tlog

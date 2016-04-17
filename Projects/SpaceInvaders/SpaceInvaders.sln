@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Basic Express 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SpaceInvaders", "SpaceInvaders\SpaceInvaders.vbproj", "{E6E648C1-29EC-41D6-A68E-D89C67832AFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6E648C1-29EC-41D6-A68E-D89C67832AFE}.Debug|x86.ActiveCfg = Debug|x86
+		{E6E648C1-29EC-41D6-A68E-D89C67832AFE}.Debug|x86.Build.0 = Debug|x86
+		{E6E648C1-29EC-41D6-A68E-D89C67832AFE}.Release|x86.ActiveCfg = Release|x86
+		{E6E648C1-29EC-41D6-A68E-D89C67832AFE}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

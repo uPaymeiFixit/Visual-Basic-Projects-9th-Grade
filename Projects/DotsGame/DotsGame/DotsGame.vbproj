@@ -1,0 +1,634 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9E504248-FAF8-4D19-835D-C5EAB2812D4F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>DotsGame.My.MyApplication</StartupObject>
+    <RootNamespace>DotsGame</RootNamespace>
+    <AssemblyName>DotsGame</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DotsGame.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DotsGame.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmEnd.Designer.vb">
+      <DependentUpon>frmEnd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGame.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGame.Designer.vb">
+      <DependentUpon>frmGame.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlayers.Designer.vb">
+      <DependentUpon>frmPlayers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlayers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlayersInfo.Designer.vb">
+      <DependentUpon>frmPlayersInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlayersInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStart.Designer.vb">
+      <DependentUpon>frmStart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransparant.Designer.vb">
+      <DependentUpon>frmTransparant.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransparant.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmEnd.resx">
+      <DependentUpon>frmEnd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGame.resx">
+      <DependentUpon>frmGame.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlayers.resx">
+      <DependentUpon>frmPlayers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlayersInfo.resx">
+      <DependentUpon>frmPlayersInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStart.resx">
+      <DependentUpon>frmStart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransparant.resx">
+      <DependentUpon>frmTransparant.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picDanger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picGet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerSQ.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPauseDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPauseUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue10.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue20.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue30.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue40.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue50.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue60.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue70.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue80.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue90.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue100.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue110.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue120.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue130.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue140.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue150.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue160.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue170.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue180.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue190.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue200.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue210.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue220.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue230.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue240.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue250.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue260.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue270.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue280.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue290.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue300.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue310.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue320.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue330.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue340.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue350.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\picPlayerHueX\picPlayerHue360.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\songBackgroundMusic.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmStartImages\btnEasy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmStartImages\btnHard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmStartImages\btnHardDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmStartImages\btnInstructions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmStartImages\btnMedium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmStartImages\btnMediumDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmStartImages\frmStartBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Sounds\invincible.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Sounds\songBackgroundMusic.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Sounds\thud.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\btnMainMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\frmPlayersEasyBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\frmPlayersHardBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\frmPlayersMediumBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmGameEndFiles\frmGameEndBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\5easy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\5easyDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\5hard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\5hardDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\5medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\5mediumDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\10easy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\10easyDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\10hard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\10hardDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\10medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\10mediumDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\15easy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\15easyDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\15hard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\15hardDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\15medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\15mediumDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\20easy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\20easyDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\20hard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\20hardDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\20medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\20mediumDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\25easy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\25easyDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\25hard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\25hardDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\25medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\UntilUnlockImages\25mediumDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players1over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players2over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players3over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players4over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players5over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players6over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players7over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players8over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players9over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players10over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players11over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players12over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players13over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players14over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players15over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players16over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players17over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\PlayersWithOverlay\players18over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayerInfoFiles\frmLockedPlayerInfoBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayerInfoFiles\frmPlayerInfoBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\RAWPlayers\player1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\RAWPlayers\player2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\RAWPlayers\player3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\RAWPlayers\player4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\RAWPlayers\player5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\RAWPlayers\player6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\RAWPlayers\player7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\RAWPlayers\player8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\RAWPlayers\player9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\RAWPlayers\player10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\RAWPlayers\player11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\RAWPlayers\player12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\RAWPlayers\player13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\RAWPlayers\player14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\RAWPlayers\player15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\RAWPlayers\player16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\RAWPlayers\player17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayersFiles\PlayerImages\RAWPlayers\player18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayerInfoFiles\btnPlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayerInfoFiles\btnPlayOver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayerInfoFiles\btnBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmPlayerInfoFiles\btnBackOver.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

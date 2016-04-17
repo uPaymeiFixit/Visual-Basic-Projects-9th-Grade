@@ -1,0 +1,34 @@
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\DotsGame.Resources.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\bin\Debug\DotsGame.exe
+C:\Users\Josh Gibbs\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\bin\Debug\DotsGame.pdb
+C:\Users\Josh Gibbs\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\bin\Debug\DotsGame.xml
+C:\Users\Josh Gibbs\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\DotsGame.exe
+C:\Users\Josh Gibbs\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\DotsGame.xml
+C:\Users\Josh Gibbs\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\DotsGame.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\DotsGame.frmStart.resources
+C:\Users\Josh Gibbs\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\DotsGame.frmEnd.resources
+C:\Users\Josh Gibbs\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\DotsGame.frmGame.resources
+C:\Users\Josh Gibbs\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\DotsGame.frmPlayers.resources
+C:\Users\Josh Gibbs\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\DotsGame.frmTransparant.resources
+C:\Users\Josh Gibbs\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\DotsGame.frmPlayersInfo.resources
+C:\Users\Josh Gibbs\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\GenerateResource.write.1349.tlog
+\\psf\Home\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\DotsGame.exe
+\\psf\Home\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\DotsGame.xml
+\\psf\Home\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\DotsGame.pdb
+\\psf\Home\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\bin\Debug\DotsGame.exe
+\\psf\Home\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\bin\Debug\DotsGame.pdb
+\\psf\Home\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\bin\Debug\DotsGame.xml
+\\psf\Home\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\ResolveAssemblyReference.cache
+\\psf\Home\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\DotsGame.frmEnd.resources
+\\psf\Home\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\DotsGame.frmGame.resources
+\\psf\Home\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\DotsGame.frmPlayers.resources
+\\psf\Home\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\DotsGame.frmPlayersInfo.resources
+\\psf\Home\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\DotsGame.frmStart.resources
+\\psf\Home\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\DotsGame.frmTransparant.resources
+\\psf\Home\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\DotsGame.Resources.resources
+\\psf\Home\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\GenerateResource.read.1.tlog
+\\psf\Home\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\GenerateResource.write.1.tlog
+\\psf\Home\Documents\Visual Studio 2010\Projects\DotsGame\DotsGame\obj\x86\Debug\GenerateResource.write.1349.tlog

@@ -1,0 +1,1491 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil Consolas;}{\f1\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green128\blue0;\red0\green0\blue255;\red43\green145\blue175;\red163\green21\blue21;}
+{\*\generator Msftedit 5.41.21.2509;}\viewkind4\uc1\pard\sl240\slmult1\cf1\lang9\f0\fs19 'Josh Gibbs\cf0\par
+\cf1 'Period 2\cf0\par
+\cf1 '26 October 2010\cf0\par
+\cf1 'Grade Program\cf0\par
+\par
+\cf2 Public\cf0  \cf2 Class\cf0  \cf3 frmMain\cf0\par
+\par
+    \cf2 Private\cf0  \cf2 Sub\cf0  txtNumber1_TextChanged(\cf2 ByVal\cf0  sender \cf2 As\cf0  System.\cf3 Object\cf0 , \cf2 ByVal\cf0  e \cf2 As\cf0  System.\cf3 EventArgs\cf0 ) \cf2 Handles\cf0  txtNumber1.TextChanged\par
+\par
+        \cf2 Try\cf0\par
+            \cf1 'changes pictures\cf0\par
+            \cf1 '(Declared: picGrade1.Image - picGrade2.Image) (Needed: picGreater.Image and picLesser.Image and txtNumber1.Text - txtNumber2.Text)\cf0\par
+            \cf2 If\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) > \cf2 Decimal\cf0 .Parse(txtNumber2.Text) \cf2 Then\cf0\par
+                picGrade1.Image = picGreater.Image\par
+                picGrade2.Image = picLesser.Image\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) > \cf2 Decimal\cf0 .Parse(txtNumber1.Text) \cf2 Then\cf0\par
+                picGrade1.Image = picLesser.Image\par
+                picGrade2.Image = picGreater.Image\par
+            \cf2 End\cf0  \cf2 If\cf0\par
+\par
+            \cf1 'outputs average of two grades\cf0\par
+            \cf1 '(Declared: lblAverage.Text) (Needed: txtNumber1.Text - txtNumber2.Text)\cf0\par
+            txtAverage.Text = ((\cf2 Decimal\cf0 .Parse(txtNumber1.Text) + txtNumber2.Text) / 2)\par
+\par
+            \cf1 'letter grades are assigned\cf0\par
+            \cf1 '(Declared: lblLetter1.Text) (Needed: txtNumber1.Text)\cf0\par
+            \cf2 If\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) < 60 \cf2 Then\cf0\par
+                lblLetter1.Text = \cf4 "F"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) >= 60 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) < 63 \cf2 Then\cf0\par
+                lblLetter1.Text = \cf4 "D-"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) >= 63 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) < 66 \cf2 Then\cf0\par
+                lblLetter1.Text = \cf4 "D"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) >= 66 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) < 70 \cf2 Then\cf0\par
+                lblLetter1.Text = \cf4 "D+"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) >= 70 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) < 73 \cf2 Then\cf0\par
+                lblLetter1.Text = \cf4 "C-"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) >= 73 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) < 76 \cf2 Then\cf0\par
+                lblLetter1.Text = \cf4 "C"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) >= 76 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) < 80 \cf2 Then\cf0\par
+                lblLetter1.Text = \cf4 "C+"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) >= 80 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) < 83 \cf2 Then\cf0\par
+                lblLetter1.Text = \cf4 "B-"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) >= 83 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) < 86 \cf2 Then\cf0\par
+                lblLetter1.Text = \cf4 "B"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) >= 86 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) < 90 \cf2 Then\cf0\par
+                lblLetter1.Text = \cf4 "B+"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) >= 90 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) < 93 \cf2 Then\cf0\par
+                lblLetter1.Text = \cf4 "A-"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) >= 93 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) < 96 \cf2 Then\cf0\par
+                lblLetter1.Text = \cf4 "A"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) >= 96 \cf2 Then\cf0\par
+                lblLetter1.Text = \cf4 "A+"\cf0\par
+            \cf2 End\cf0  \cf2 If\cf0\par
+\par
+            \cf1 'letter grades are assigned to average\cf0\par
+            \cf1 '(Declared: lblLetter2.Text) (Needed: txtAverage.Text)\cf0\par
+            \cf2 If\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 60 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "F"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 60 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 63 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "D-"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 63 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 66 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "D"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 66 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 70 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "D+"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 70 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 73 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "C-"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 73 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 76 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "C"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 76 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 80 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "C+"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 80 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 83 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "B-"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 83 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 86 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "B"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 86 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 90 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "B+"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 90 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 93 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "A-"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 93 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 96 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "A"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 96 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "A+"\cf0\par
+            \cf2 End\cf0  \cf2 If\cf0\par
+\par
+        \cf2 Catch\cf0  ex \cf2 As\cf0  \cf3 Exception\cf0\par
+        \cf2 End\cf0  \cf2 Try\cf0\par
+    \cf2 End\cf0  \cf2 Sub\cf0\par
+\par
+    \cf2 Private\cf0  \cf2 Sub\cf0  txtNumber2_TextChanged(\cf2 ByVal\cf0  sender \cf2 As\cf0  System.\cf3 Object\cf0 , \cf2 ByVal\cf0  e \cf2 As\cf0  System.\cf3 EventArgs\cf0 ) \cf2 Handles\cf0  txtNumber2.TextChanged, txtAverage.TextChanged\par
+\par
+        \cf2 Try\cf0\par
+            \cf1 'changes pictures\cf0\par
+            \cf1 '(Declared: picGrade1.Image - picGrade2.Image) (Needed: picGreater.Image and picLesser.Image and txtNumber1.Text - txtNumber2.Text)\cf0\par
+            \cf2 If\cf0  \cf2 Decimal\cf0 .Parse(txtNumber1.Text) > \cf2 Decimal\cf0 .Parse(txtNumber2.Text) \cf2 Then\cf0\par
+                picGrade1.Image = picGreater.Image\par
+                picGrade2.Image = picLesser.Image\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) > \cf2 Decimal\cf0 .Parse(txtNumber1.Text) \cf2 Then\cf0\par
+                picGrade1.Image = picLesser.Image\par
+                picGrade2.Image = picGreater.Image\par
+            \cf2 End\cf0  \cf2 If\cf0\par
+\par
+            \cf1 'outputs average of two grades\cf0\par
+            \cf1 '(Declared: txtAverage.Text) (Needed: txtNumber1.Text - txtNumber2.Text)\cf0\par
+            txtAverage.Text = ((\cf2 Decimal\cf0 .Parse(txtNumber1.Text) + txtNumber2.Text) / 2)\par
+\par
+            \cf1 'letter grades are assigned\cf0\par
+            \cf1 '(Declared: lblLetter2.Text) (Needed: txtNumber2.Text)\cf0\par
+            \cf2 If\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) < 60 \cf2 Then\cf0\par
+                lblLetter3.Text = \cf4 "F"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) >= 60 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) < 63 \cf2 Then\cf0\par
+                lblLetter3.Text = \cf4 "D-"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) >= 63 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) < 66 \cf2 Then\cf0\par
+                lblLetter3.Text = \cf4 "D"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) >= 66 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) < 70 \cf2 Then\cf0\par
+                lblLetter3.Text = \cf4 "D+"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) >= 70 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) < 73 \cf2 Then\cf0\par
+                lblLetter3.Text = \cf4 "C-"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) >= 73 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) < 76 \cf2 Then\cf0\par
+                lblLetter3.Text = \cf4 "C"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) >= 76 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) < 80 \cf2 Then\cf0\par
+                lblLetter3.Text = \cf4 "C+"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) >= 80 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) < 83 \cf2 Then\cf0\par
+                lblLetter3.Text = \cf4 "B-"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) >= 83 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) < 86 \cf2 Then\cf0\par
+                lblLetter3.Text = \cf4 "B"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) >= 86 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) < 90 \cf2 Then\cf0\par
+                lblLetter3.Text = \cf4 "B+"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) >= 90 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) < 93 \cf2 Then\cf0\par
+                lblLetter3.Text = \cf4 "A-"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) >= 93 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) < 96 \cf2 Then\cf0\par
+                lblLetter3.Text = \cf4 "A"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtNumber2.Text) >= 96 \cf2 Then\cf0\par
+                lblLetter3.Text = \cf4 "A+"\cf0\par
+            \cf2 End\cf0  \cf2 If\cf0\par
+\par
+            \cf1 'letter grades are assigned to average\cf0\par
+            \cf1 '(Declared: lblLetter2.Text) (Needed: txtAverage.Text)\cf0\par
+            \cf2 If\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 60 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "F"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 60 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 63 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "D-"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 63 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 66 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "D"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 66 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 70 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "D+"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 70 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 73 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "C-"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 73 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 76 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "C"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 76 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 80 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "C+"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 80 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 83 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "B-"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 83 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 86 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "B"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 86 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 90 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "B+"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 90 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 93 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "A-"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 93 \cf2 And\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) < 96 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "A"\cf0\par
+            \cf2 ElseIf\cf0  \cf2 Decimal\cf0 .Parse(txtAverage.Text) >= 96 \cf2 Then\cf0\par
+                lblLetter2.Text = \cf4 "A+"\cf0\par
+            \cf2 End\cf0  \cf2 If\cf0\par
+\par
+        \cf2 Catch\cf0  ex \cf2 As\cf0  \cf3 Exception\cf0\par
+        \cf2 End\cf0  \cf2 Try\cf0\par
+    \cf2 End\cf0  \cf2 Sub\cf0\par
+\cf2 End\cf0  \cf2 Class\cf0\par
+\par
+\f1\fs22{\pict\wmetafile8\picw3889\pich3043\picwgoal2205\pichgoal1725 
+010009000003046400000000db63000000000400000003010800050000000b0200000000050000
+000c0273009300030000001e0004000000070104000400000007010400db630000410b2000cc00
+73009300000000007300930000000000280000009300000073000000010018000000000074c700
+00000000000000000000000000000000004a4a4a4242423131313939393939394242424242424a
+4a4a4242424242424242424a4a4a4242424242424242424a4a4a4242424242424242424a4a4a42
+42424242424242424a4a4a4242424242424242424a4a4a4242424242424242424a4a4a42424242
+42424242424a4a4a4242424242424242424a4a4a4242424242424242424a4a4a42424242424242
+42424a4a4a4242424242424242424a4a4a4242424242424242424a4a4a4242424242424242424a
+4a4a4242424242424242424a4a4a4242424242424242424a4a4a4242424242424242424a4a4a42
+42424242424242424a4a4a4242424242424242424a4a4a4242424242424242424a4a4a42424242
+42424242424a4a4a4242424242424242424a4a4a4242424242424242424a4a4a42424242424242
+42424a4a4a4242424242424242424a4a4a4242424242424242424a4a4a4242424242424242424a
+4a4a4242424242424242424a4a4a4242424242424242424a4a4a4242424242424242424a4a4a42
+42424242424242424a4a4a4242424242424242424a4a4a4242424242424242424a4a4a42424242
+42424242424a4a4a4242424242424242424a4a4a4242424a4a4a424242000000cecece9c9c9c84
+848484848494949484848484848484848484848484848484848484848484848484848484848484
+848484848484848484848484848484848484848484848484848484848484848484848484848484
+848484848484848484848484848484848484848484848484848484848484848484848484848484
+848484848484848484848484848484848484848484848484848484848484848484848484848484
+848484848484848484848484848484848484848484848484848484848484848484848484848484
+848484848484848484848484848484848484848484848484848484848484848484848484848484
+848484848484848484848484848484848484848484848484848484848484848484848484848484
+848484848484848484848484848484848484848484848484848484848484848484848484848484
+848484848484848484848484848484848484848484848484848484848484848484848484848484
+848484848484848484848484848484848484848484848484848484848484848484848484848484
+84848484848484848484848484848484848484848484848484848484848484848484848c8c8c63
+63634a4a4a000000d6d6deefefefe7e7e7d6d6d6c6c6ced6d6d6d6d6d6d6d6d6ced6d6d6d6d6ce
+d6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6ced6d6d6d6d6ced6d6d6
+d6d6ced6d6d6d6d6ced6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6ced6d6d6d6d6ce
+d6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6
+d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ce
+d6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6
+d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ce
+d6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6
+d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ce
+d6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6
+d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ce
+d6d6d6d6d6ced6d6d6d6d6cecece8c8c8c424242000000d6d6deffffffdee7e7b5bdbd8c8c9484
+8c8c949c9cced6d6d6d6de848c8c7b8484848c8cced6d69ca5a57b848484848c8c848cbdbdbdc6
+c6c6a5a5a5dee7debdbdbdb5bdbdcededed6dedec6cecec6cece8484848c94947b7b7ba5a5a5a5
+a5a5cecece9ca5a5bdc6c6848c8c737b7b848484ced6d6bdbdbd8c9494737b7b848c8cd6d6d69c
+a5a57b7b7b848484848484bdc6c6ced6d6d6dedececed6d6d6d6ced6d6d6d6d6d6d6d6d6d6dece
+d6d6d6d6d6ced6d6d6d6deced6d6d6d6d6ced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ce
+d6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6dece
+d6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6
+d6deced6deced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6dedece
+d6d6ced6d6ced6d6ceded6ced6d6ceded6ced6d6ceded6ced6d6ced6d6ced6d6cededeced6d6ce
+d6d6ced6d6ced6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6dece
+d6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6dede848484424a4a000000ce
+d6def7ffffc6c6cebdc6c6b5b5bdbdc6c6a5a5adbdc6c6adb5bdbdc6c6c6cecebdbdc6a5a5add6
+dee7c6ced6d6dedec6c6c6bdbdbdb5b5b5b5b5b5cececeadb5b5adbdb5bdcecebdcecebdcece8c
+9494c6cecebdc6c6dedede9c9c9cb5b5b5bdbdbdbdbdbdbdc6c6a5adadd6d6d6c6cece9c9c9cbd
+bdbd9ca5a5d6dedeb5bdb5a5adadc6cec6d6deded6d6d6cececea5adadc6cececed6d6d6d6d6ce
+d6d6d6d6dececed6ced6d6ced6d6ced6d6ced6d6d6d6d6ced6d6ced6d6ced6d6ced6dec6d6d6ce
+d6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6dece
+d6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ce
+d6dec6d6d6ced6deced6d6ced6dec6ced6ced6deced6d6ced6dec6ced6ced6deced6d6ced6dec6
+d6d6ced6deced6d6ced6dec6d6d6ced6d6ced6d6ced6d6c6d6d6ced6d6c6d6d6ced6d6c6d6d6ce
+d6d6c6d6d6ced6dec6d6d6ced6d6c6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dece
+d6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ce
+d6deced6d6848484424242000000ced6deffffffced6dec6ced6d6dedeced6d6a5adb5b5bdbd9c
+a5adadb5bdd6dedec6c6ce949ca5ced6d69c9ca5737b7b8c8c94bdb5b5c6c6c69ca5a5d6d6debd
+c6c6bdc6c6c6d6d6cededea5b5b5adbdbdbdc6c6dededed6d6d6cec6ce9c9ca5bdc6c6a5adadbd
+c6c6a5adadced6d6bdc6c6949c9cbdc6c6949c9cd6dedec6cecea5adadd6dede9ca5a57b848473
+7b7bbdc6c6ced6d6d6dedeced6d6ced6deced6d6ced6deced6deced6deced6d6d6d6deced6d6ce
+d6deced6d6d6d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6deced6dece
+d6deced6deced6deced6deced6deced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6deced6dece
+d6deced6deced6deced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6d6d6de848484424a4a000000c6ceceffffffd6d6dece
+d6d6ced6dec6ced69ca5a5bdc6c6b5bdbdadadb5d6dedeb5bdc69c9ca5adb5bdadb5bddedee7ce
+ced6ded6debdbdbd9ca5a5ced6d6a5b5b59cadadcededebdc6c6b5bdbdadbdbdced6d6ced6d684
+84846b6b6badb5b5bdc6c6b5bdbdadb5b59ca5a5ced6d6ced6d69ca5a5bdc6c6adb5b5ced6d6b5
+bdbd949c9cb5bdbdadb5b5ced6d6dee7e7c6ceced6dedeced6d6ced6d6ceced6ced6d6c6ced6d6
+dedeced6d6ced6deced6d6ced6d6ced6d6ced6deced6d6ced6d6ced6d6ced6dec6d6d6ced6dece
+d6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ce
+d6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6
+d6d6ced6deced6d6ced6dec6ced6ced6deced6d6ced6dec6ced6ced6deced6d6ced6dec6d6d6ce
+d6deced6d6ced6dec6ced6ced6deced6d6ced6dececed6ced6dececed6ced6dececed6ced6dece
+cedeced6dececed6ced6dececedeced6dececedeced6deced6d6ced6dec6d6d6ced6deced6d6ce
+d6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6d6ced6d684848442
+4242000000ced6deffffffced6dec6ceced6dee7ced6dea5adb5bdbdc6d6dede84848c84848c7b
+8484ced6d6bdc6ce848c94737b7b848c8cb5b5b5ceced684848c7b848c849494bdcecec6d6d6ce
+dedea5adb5b5c6c6c6c6cededee7ceced6e7e7e7d6d6debdc6c6a5adb5bdc6ce848c94737b7b73
+7b7bc6ced6b5c6c67b84846b7373848c8cc6cecec6d6d67b848c737b84737b84bdc6c6c6ced6ce
+d6deced6d6d6dee7ced6deced6d6c6d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6dece
+d6deced6deced6deced6deced6deced6deced6deced6deced6deced6ded6d6deced6ded6d6dece
+d6ded6d6deced6ded6d6dececeded6d6deced6ded6d6dececeded6d6e7ceceded6d6e7ceceded6
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6d6dede848484424a4a000000ceced6ffffffceced6ceced6ced6d6ced6d69c
+a5adb5bdbdbdc6c6ced6ded6dee7c6ced6ced6d6d6d6debdc6cedee7e7d6d6decececebdbdc6a5
+adb5d6dedeced6deced6dec6d6d6cededeb5c6c67b8c8cc6cececed6d6ceced68c8c94b5b5b5c6
+c6ced6dee7b5c6c6949ca5dee7e7ced6ded6dee7b5bdbd9cadaddee7e7ced6d6ced6deced6d6d6
+dedeced6d6c6ced6bdcececed6d6c6ced6ced6d6ced6deced6dec6ced6ced6dec6d6d6ced6dece
+d6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ce
+d6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6
+d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ce
+d6deced6d6ced6dec6ced6ced6deced6d6ced6dec6ced6ced6deced6d6ced6dec6ced6ced6dece
+cedeced6dececed6ced6dececed6d6d6dececed6ced6dececeded6d6dececed6ced6dececeded6
+d6dececedeced6dececeded6d6dececed6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6
+d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6deced6d6848484424242000000ced6deff
+ffffd6dee7ced6deced6d6c6ceceadb5b5bdc6c6ced6d6d6dee7ced6deced6d6ced6d6d6dee7d6
+d6dec6ced6d6d6ded6dee7bdc6c68c9494ced6deced6d6c6d6d6c6d6d6d6dee7bdc6cebdc6ce84
+8c94848c8c7b848cbdbdc6ceced6bdc6ceb5bdbdb5bdbd9ca5adced6d6c6ceced6dee7b5bdbd9c
+a5adced6dec6ced6ced6d6ced6dec6cececed6ded6e7e7d6dee7d6dee7ced6dec6ced6ced6dece
+d6d6ced6deced6deced6deced6deced6deced6deced6deced6deced6deced6deced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6deced6dece
+d6deced6deced6deced6deced6deced6deced6deced6deced6d6d6d6deced6d6d6d6deced6d6d6
+d6deced6ded6d6deced6ded6d6deced6ded6d6deced6ded6d6deced6deced6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6d6
+d6de848484424a4a000000d6d6def7ffffced6d6d6d6deced6d6dedee7bdc6ceced6ded6d6dece
+ced6c6c6cededee7ced6d6c6ceced6dedeced6d6ced6dec6ced6d6d6deced6ded6e7e7bdcecec6
+d6d6cededec6ced6d6dee7c6ced6c6d6d6ced6d6ced6dec6ceced6d6deced6d6c6ceced6dedece
+dedecededeced6d6c6ced6d6dedec6ced6d6e7e7c6ced6ced6deced6d6ced6d6cededec6ced6c6
+ced6ced6dec6ced6ced6deced6deced6dec6ced6ced6deced6d6ced6dec6ced6ced6deced6d6ce
+d6dec6ced6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6
+d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ce
+d6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6dece
+d6d6ced6dec6ced6ced6deced6d6ced6dec6ced6ced6dececedeced6dec6ced6ced6deced6d6ce
+d6d6c6d6d6ced6d6ced6d6ced6d6c6d6d6ced6d6ced6d6ced6dec6d6d6ced6d6ced6d6ced6dec6
+d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ce
+d6deced6d6ced6dec6d6d6ced6d6ced6d6848484424242000000ced6deffffffd6d6dececed6d6
+dedeced6d6d6d6deced6d6d6d6dec6ceced6deded6dee7d6d6dec6ced6ced6d6d6d6ded6deded6
+dee7ceced6d6dedeced6deced6decededec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6deced6deced6deced6deced6deced6deced6dece
+d6deced6ded6dedeced6deced6d6ced6ded6dee7c6ced6ced6deced6d6cededec6cececed6ded6
+dedeced6d6ced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6d6dedec6ced6d6dee7ced6d6c6
+ced6d6dee7ced6dec6d6d6ceded6c6d6ced6e7dec6d6cec6d6cec6d6ced6e7dec6d6cecededebd
+cececed6d6ced6d6ceded6cededecededebdcec6ced6deced6d6ced6d6ced6d6ced6d6ced6dede
+e7efc6cececed6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6d6dede848484424a4a00
+0000ceced6ffffffced6d6ced6d6ced6d6ced6d6ced6d6ced6ded6d6ded6dedeced6d6ceced6c6
+ceced6d6dececed6ceced6bdc6cececed6c6d6d6d6dedec6ced6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6dece
+d6deced6d6ced6deced6deced6deced6d6ced6deced6deced6dec6ced6ced6deced6deced6d6c6
+ced6ced6deced6deced6deced6d6d6dedec6ced6cededec6d6d6ced6deced6d6ced6dec6d6d6ce
+d6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6dece
+d6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6d6ced6d6ced6dec6d6d6ced6d6ced6d6ce
+d6dec6cececed6d6c6cececedededee7e7bdc6ceced6de3139399cada594a59c8ca59494ad9ca5
+bdad9cb5a58ca5948ca59494a59c5a6b63ceded6bdcec6ceded6c6d6cebdcec6e7f7efc6ced6ce
+d6deced6ded6dee7ced6dec6ced6c6ced6d6dedec6d6d6ced6deced6d6ced6dec6d6d6ced6dece
+d6d6ced6deced6d6848484424242000000ced6deffffffd6dedeced6d6d6d6dececed6d6d6dece
+d6d6c6cecececed6ced6d6c6ced6d6deded6deded6dedeced6dee7efefced6d6d6d6dececed6ce
+d6d6ced6ded6dedec6ced6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6dece
+d6d6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6
+d6deced6d6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6dedec6ced6d6d6dece
+d6ded6d6deced6d6d6d6dececed6ced6dec6ced6d6dee7ced6d6ced6deced6deced6d6ced6dece
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6d6deded6dedec6ceced6dedebdc6c6949c9c949c9ca5
+adad9cada5a5b5a5a5b5a5a5b5a5adc6b5a5b5a59cb5a5adc6b5adc6b594a59ca5b5ad294231ce
+e7d6bdcec6d6e7deb5c6bdced6d6c6ced6c6ced6c6ceced6dedeced6d6c6ced6d6dee7ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6d6d6de848484424a4a000000ceced6ffffffce
+d6d6ced6d6ced6d6ced6d6ced6d6ced6d6d6d6ded6dee7ced6d6d6dee7ced6debdc6cebdc6ced6
+dedebdc6cebdc6ced6deded6dedeced6d6ceced6c6ceced6dedeced6d6ced6deced6d6ced6d6ce
+d6d6ced6deced6d6ced6d6ced6d6d6d6deced6d6ced6d6ced6d6d6d6deced6d6ced6d6ced6d6d6
+d6deced6d6ced6d6ced6d6d6d6deced6d6ced6d6ced6d6d6d6dececed6ced6deced6d6d6d6dece
+ced6ced6ded6d6dececed6ceced6d6d6deced6d6ced6deced6d6d6d6ded6dee7ced6d6ced6d6ce
+d6d6c6ced6ced6dec6cececed6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6dece
+d6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ce
+d6dec6d6d6ced6deced6d6ced6dec6d6d6ced6d6ced6d6ced6d6c6d6d6ced6d6c6cececed6d6ce
+d6d6b5bdbd9ca5a5adb5b5a5ada59cada5adbdb5adbdada5b5a5adbdad9cb5a5adbdada5b5ad9c
+ada5a5b5a5adbdadadbdad9cada5314239ceded6bdcec6d6e7ded6deded6dedeced6deced6d6ce
+d6d6d6dee7c6cecec6ced6ced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6d6ced6d684
+8484424242000000ced6deffffffd6d6dececed6d6dedeced6d6d6d6deced6d6ceced6ceced6c6
+c6cececed6d6dedeced6d6e7e7efe7eff7ffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffff7ffffced6deced6deced6d6ced6decededeced6deced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6cededece
+d6d6ced6d6ced6d6d6dedeced6ce31423994a59ca5ada594a59cb5c6bdadbdb5b5c6b5a5b5a5a5
+b5a5adb5adb5bdb5adb5adb5bdb5adbdada5b5ada5ada5adb5adadb5ad848c84213129313931d6
+ded6ced6d6bdceced6deded6dedeced6d6ced6d6d6dedec6ced6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6d6dede848484424a4a000000ceced6ffffffced6d6ced6d6ced6d6ce
+d6d6ced6d6ced6deced6dedee7e7ceced6ced6d6c6ced6ced6dec6cece949c9cb5bdbde7e7e7c6
+cecec6cececed6d6dededececed6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6ced6d6ced6d6d6
+d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ce
+d6d6d6d6d6ced6d6d6d6d6ceced6d6d6d6ced6d6d6d6dececed6d6d6d6ced6d6d6d6deced6d6ce
+d6d6d6d6d6d6d6dececed6d6d6d6ced6d6cececeffffffd6dedec6ced6ced6dec6ced6cededece
+d6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ce
+d6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6
+d6d6ced6deced6d6ced6dec6d6d6ced6d6ced6d6ced6d6c6d6ce293931738473b5c6b5b5c6b5a5
+ada5a5b5adadb5ad9ca59c525a52424a424a524a424a39394239525a524a524a9ca59cc6cec6ad
+b5ada5ada5848c84212921293129293131d6dedec6ced6bdc6c6ced6dec6ced6c6ced6d6dedece
+dedec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6deced6d6848484424242000000ce
+d6deffffffd6dedeced6d6d6d6dececed6d6d6deced6d6c6ced6ced6d6ced6d6d6d6ded6d6ded6
+dedeced6d66b737b4a5252eff7f7ffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe7e7e7ffffffce
+d6d6ced6d6ced6dec6d6d6ced6d6ced6dec6d6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6d6ced6d6ceded6ced6d684
+948c9ca59cb5c6b5a5b5a5adbda5b5c6b5a5b5a5425242424a3963635a4a4a4a4a4a42c6c6bd8c
+8c844a4a4252524a525252424239a5a5a5b5b5b56b6363393131212121212121bdc6c6e7efefce
+d6deced6d6d6dee7c6ced6d6dee7c6ced6ced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6d6d6de848484424a4a000000ceced6ffffffced6d6ced6d6ced6d6ced6d6ced6d6ced6d6d6
+d6ded6d6dec6ced6dedee7c6ced6ced6d6ced6d6848c8c394242ffffffffffffffffffeff7f7ff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffff7f7f7d6d6d6ffffffced6dececed6d6dedec6ced6ced6dec6d6d6ced6dec6cedece
+d6deced6d6d6d6d6ced6d6ced6dec6d6d6ced6deced6d6ced6dececed6ced6deced6d6ced6dec6
+d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ce
+d6d6ced6d6ced6d6c6d6ceced6d694a59ca5ada5b5c6b5a5b5a5a5b5a58c9484425242424a4252
+524a4239396363632929310000180808295a5a73424a5a424a424a4a425a5a525a524a5a525a42
+3939211818211818181818c6c6ceced6dec6ced6ced6dec6cececed6deced6deced6d6ced6dec6
+d6d6ced6deced6d6ced6dec6d6d6ced6d6ced6d6848484424242000000d6d6deffffffd6d6dece
+ced6d6dedeced6d6ced6dec6d6d6ced6deced6d6ced6deced6d6ced6deced6d6d6d6de7b848442
+4242fffffffffffff7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fff7fffffffffffffffffffffffffffffffffffffffffff7ffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffd6d6d6ffffffced6d6d6d6deced6d6d6
+dedec6d6d6ced6debdcedebdd6efbdced6dedecee7deced6d6d6ced6dec6ced6ced6ded6d6dece
+d6d6d6d6deced6d6d6d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6dec6d6d6ced6deced6deced6d6ced6d6c6d6d6c6d6ced6ded694a59ca5b5a5a5b5a5adb5adb5
+bdb5848c84525a524a524a424a42524a525a525a293139000831424aa52929940000524a5a8c39
+4a4a52634a4a4a31524a424a3139291018392129292121292121181818ced6d6ceced6ced6dece
+dedeced6debdcececed6deced6deced6dec6d6deced6deced6d6ced6deced6d6d6dede84848442
+4a4a000000ceced6ffffffced6d6ced6d6ced6d6ced6d6c6d6d6ced6dec6d6d6ced6d6ced6d6ce
+d6dececed6ced6d6ced6d68484844a4a42fffffff7fffffffffffffffffffff7fffff7ffffffff
+ffffffffffffffffffffffffffffffffffefeff7fffffffffffffffffff7fffffffffff7ffffff
+ffffffeff7fffffffffffff7fffff7fffffffffffffffffff7f7ffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd6
+d6d6ffffffced6d6ced6d6ced6d6ced6d6c6d6d6c6d6debdd6e7adc6e7c6d6e7ded6c6efdec6bd
+bdbdd6dee7d6dee7ced6dececed6ced6deced6d6d6d6dececed6ced6deced6d6ced6dec6d6d6ce
+d6deced6d6ced6dec6d6d6ced6dec6d6d6ced6deced6debdc6c6d6dededee7e7c6cececeded6ce
+ded694a594bdcebd9cad9cadbdadb5bdb5424239424a424a4a424a4a4a63637321213900002929
+398c00109c1018bd2939bd00085a5a7384425a4a4a4a42524a4273636331182121101029212129
+2121181818ced6d6d6dedec6ced6c6ced6bdc6cee7eff7c6ced6ced6dec6d6d6ced6dec6d6d6ce
+d6deced6d6d6d6d6ced6d6848484424242000000d6d6deffffffd6dedeced6d6cededec6d6d6ce
+dedec6d6d6ced6dec6d6d6cededeced6d6ced6deced6d6d6d6de848484424242ffffffefffff73
+848c000000000000948c7bfffffff7ffff6373730000081010105a4a4affffffffffff212129ef
+f7f7ffffff5a63730000080008005a635afffffffff7ff6b7373000800000800525242ffffffff
+fffffffffffffff7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffd6d6d6ffffffced6d6d6d6deced6d6d6dedec6ced6ced6e7bd
+d6deb5d6ef526373423929d6c6addededeced6dec6ced6ced6ded6d6deced6d6d6d6deced6d6ce
+d6deced6d6d6d6deced6d6ced6deced6d6ced6deced6d6ced6dec6d6d6ced6deced6d6d6dee7d6
+dedeced6debdcececed6d6ceded62131299cad9c9cad9cb5c6b5b5bdad3942314a524a52524a42
+42426b6b73182139000842394aa51021a52129ef0810de1829de1831b5082163425a73525a6b39
+39423131314a4a42292929212118182121293131080808cecececed6deced6dedee7efadbdc6ce
+d6dec6d6deced6deced6deced6deced6d6d6d6deced6d6d6d6de848484424a4a000000ceced6ff
+ffffced6d6ced6d6ced6d6ced6d6c6d6d6ced6d6c6d6d6ced6deced6d6ced6dececed6ced6dece
+d6d6848484393939ffffff94a5ad31424affffffffffff393129cecec6dee7e7424a52e7efefff
+ffff6b5a52d6cec6fffffffffffff7ffffdee7e74a4a52f7f7ffe7f7f74a5a5acececeefefef4a
+4242f7f7f7f7fff76b6b63cebdb5fffff7ffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd6d6d6ffffffced6d6ce
+d6d6ced6d6d6d6dec6d6d6c6d6debdd6e7b5d6ef4a636b292110e7d6bdd6dedeced6e7ceceded6
+dedeced6d6d6d6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dec6d6d6ced6dec6
+d6d6ced6dec6d6d6ced6debdc6ceced6ded6dee7ced6d6c6d6ceceded6a5b5ada5b5adb5bdb5a5
+ada5adb5ad4a524242423952524a524a4a21213110104a29318c1829a52129ce1021f70818f718
+31f72139d62139a518296b21295a52527352525a314239182118213129313131313931313939ce
+d6d6ceced6d6dee7bdc6ced6e7efc6cedeced6dec6ced6ced6deced6d6ced6deced6d6ced6d6ce
+d6d6848484424242000000d6d6deffffffd6d6dececed6d6dedeced6d6ced6dec6d6d6ced6dec6
+d6d6ced6deced6d6ced6deced6d6d6d6de7b8484424242fffffffffffff7f7ffffffffffffff8c
+8c84848c7bc6c6c65a5a63fffffff7f7ef7b7b73bdbdadfffffffffffff7ffffa5b5bd6b6352ff
+fff7efffff5a73849c9c9cdecec66b5a52fffffff7ffff5a636bc6b5a5ffffeffffffff7ffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffd6d6d6ffffffced6d6d6d6deced6d6d6dedec6d6d6c6d6debdcedeadc6de526b7342
+3921ded6bdc6c6c6bdced6ced6dec6ced6d6d6deced6d6d6d6deced6d6d6d6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dec6d6d6d6dee7d6dedebdc6ceced6d6de
+efe7b5c6bd8c9c94a5b5adadb5adadb5ad4a5a4a424a394a4a4a52524a3931314a4a634a4aa529
+29ad1821bd2931ef1821ff0010ef0821e70010bd2939c63139ad39319c6b63ad424263424a4a42
+5a4a1829213942424a524a212929cececed6dedec6cececed6dec6ced6ced6deced6deced6dec6
+d6deced6deced6d6ced6deced6d6d6dede848484424a4a000000ceced6ffffffced6d6ced6d6ce
+d6d6ced6d6c6d6d6ced6dec6d6d6ced6d6ced6d6ced6dececed6ced6d6ced6d684848c424242ff
+ffffffffffffffffffffffffffffadada584847b949494848c8cffffffffffffada5947b7b73ff
+ffffffffffdef7ff94a5ad9c8473ffffffe7ffff8cadc67b847ba59c8c8c7363ffffffefffff8c
+9ca5a5947bffffefffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffd6d6d6ffffffced6d6ced6d6ced6d6ced6d6c6
+d6d6c6d6debdd6e7b5d6ef425a63291808efdec6dededeced6dececeded6dee7ceced6ced6dece
+d6d6d6d6dececed6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6dec6d6d6ce
+d6deced6d6ced6d6ced6d6d6dedeb5bdbddeefe794a59ca5bdadadb5adb5c6b53942314a52424a
+524a5a635a6b6b6b8c8ca57b7bc63131a5424ace0818bd2131f70821e71029d64a63f74a5ad663
+63d64a42a5a59ce7393952424a4a394a42394a39394239525a5a293131dee7e7c6c6ced6dee7c6
+ced6d6e7e7c6ced6ced6dec6d6d6ced6dec6d6d6ced6deced6d6d6d6d6ced6d684848442424200
+0000d6d6deffffffd6dedeced6d6cededec6d6d6cededec6d6d6ced6dec6d6d6cededeced6d6ce
+d6deced6d6d6d6de848484424242ffffffc6d6de213142efeff7ffffff524a42bdb5adadb5b563
+737bffffffffffffb5a5949c8c7bfffffff7ffffe7ffff8ca5ad8c7b6bffffffe7ffff7394ad73
+8484ada594ad9484fffff7f7ffff9cadb5948c6bffffe7ffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd6d6d6ff
+ffffced6d6d6d6deced6d6d6dedec6ced6ced6e7bdd6deb5cee7526373423929d6ceb5ced6d6c6
+ced6c6ced6ceced6d6d6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6ce
+d6deced6d6ced6dec6d6d6ced6deced6d6d6dee7bdcecec6ced6d6dededeefe742524abdc6bd9c
+ada5adb5adadbdb55a63524a52424a524a39423952525231313929294a1021523142942131a529
+39d61831ce2942c600107318317310214a292952524a635a52524a4a3963635a52524a5a636342
+4a4a4a4a4ac6c6ced6dedeced6d6c6ced6bdcececed6dec6d6deced6deced6deced6deced6d6d6
+d6deced6d6d6d6de848484424a4a000000ceced6ffffffced6d6ced6d6ced6d6ced6d6c6d6d6ce
+d6d6c6d6d6ced6deced6d6ced6dececed6ced6deced6d6848484423942ffffffcedeef00081800
+00080800008c847bffffff9ca5a5738484f7ffffffffffad9c94948473ffffffefffffe7ffff8c
+a5ad9c8473ffffffe7f7ff84a5bd6b7b7bada5949c8473ffffffeff7ff94a5ad8c8463ffffefff
+fff7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffd6d6d6ffffffced6d6ced6d6ced6d6d6d6dec6d6d6c6d6debdd6e7b5
+cee74a636b393118cec6add6d6d6d6dee7c6ced6d6d6deced6d6d6d6dececed6ced6deced6d6ce
+d6dececed6ced6deced6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6debdc6ced6dee7ce
+d6debdcececedede0008009cada5adbdadadb5adb5c6b53142314a5242424a425252524242424a
+4a4a39424242526394add600085a2131b52942ce314ab500186321395a42525a4a4a52524a4a4a
+42395a4a424239395a52524a4a4a525252212121d6dedec6ceced6dedeced6deced6dec6cedece
+d6dec6ced6ced6deced6d6ced6deced6d6ced6d6ced6d6848484424242000000d6d6deffffffd6
+d6dececed6d6dedeced6d6ced6dec6d6d6ced6dec6d6d6ced6deced6d6ced6deced6d6d6d6de7b
+84844a4a4af7f7ffefefff424252efeff7fffffffffffffffff7d6d6d642424afffffffffff77b
+7b6badad9cffffffffffffefffffadbdc67b634afff7e7efffff4a6b8ca5b5add6cebd735a4aff
+ffffeff7ff6b7b8cbdb594ffffe7fffffffff7ffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffffff7f7f7ffffffffffffffffffd6dedeffffffced6d6d6d6dece
+d6d6d6dedec6d6d6c6d6debdcedeb5d6ef4a636b1008001808000000000000080008100000086b
+737bbdbdc6dedee7c6ceced6d6ded6dedeced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6ced6dec6d6d6c6ced6d6e7e7c6ced6ced6d6c6d6ce4a524a9cada5adbdadadbdadadbdad52
+5a4a424a39424a42525252524a4a4a4a424a524a424a4aa5b5ce00084a2129ad2129bd394ac600
+1863314a5a42524252524a5a4a4a5a4a4a5a424a5a4a5a5a4a5a524a52313131212121c6cecede
+dee7c6ceced6dee7ced6deced6deced6deced6dec6d6deced6deced6d6ced6deced6d6d6dede84
+8484424a4a000000ceced6ffffffced6d6ced6d6ced6d6ced6d6c6d6d6ced6dec6d6d6ced6d6ce
+d6d6ced6dececed6ced6d6ced6d684848c313131fffffff7efff181829f7f7f7ffffffeff7e7ff
+ffffdedede4a4a52efefefffffff5a5a4acecebdfffffff7f7ffefffffcedede635242fffff7ef
+ffff42526bbdcecee7e7de4a3929fffffff7f7ff525a63d6ceb5ffffefffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffcececeffffffced6d6ced6d6ced6d6ced6d6c6d6d6c6d6debdd6e7adc6de4a5a6b312918d6
+c6add6dedeced6dec6ced6d6deded6d6ded6d6ded6d6dededee7ced6d6c6cecec6cecedee7e7c6
+d6d6ced6deced6d6ced6dec6d6d6ced6dec6d6d6ced6dec6ced6c6ced6bdcecedee7e7cededed6
+e7de9cada5adbdb5adb5adbdcebd394a394a524a424a4252524a39393952524a4a5242394a42a5
+bdc60008392129ad2129bd424ac61021733142524252424a4a42524a4252424a5a4a5252424a4a
+4242393939393939000000d6dedec6ced6ced6debdc6ced6dee7c6ced6ced6dec6d6d6ced6dec6
+d6d6ced6deced6d6d6d6d6ced6d6848484424242000000d6d6deffffffd6dedeced6d6cededec6
+d6d6cededec6d6d6ced6dec6d6d6cededeced6d6ced6deced6d6d6d6de8484845a5252fffffff7
+ffff182931000008000000100800ded6ceffffff6373730008000000006b5a52fffffff7ffffff
+ffffffffffffffff5a6b6b0000000800005a5a52fffffff7ffff7b7b7b080000100000635a52ff
+fffff7fffffffffffffff7ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffd6d6d6ffffffced6d6d6d6deced6d6d6dedec6ced6ce
+d6e7bdd6debdd6ef526b73393121efdec6dededec6ced6c6ced6ced6deced6d6c6c6ceced6d6ce
+ced6ceced6d6dededee7e7c6cececed6deced6d6ced6deced6d6ced6dec6d6d6ced6deced6d6d6
+dee7cededed6dedec6cecebdcec6c6d6ce94a59ca5b5ad9cad9cadbdb54a52423942394a524a4a
+4a4a4242425252524a524a394a42adcece0010392131a52131bd3139bd00106b314a634252424a
+524a4a4a42524a4a4a4a42424231293118293129081010000808d6dedec6ceced6dee7ced6dec6
+ced6ced6dec6d6deced6deced6deced6deced6d6d6d6deced6d6d6d6de848484424a4a000000ce
+ced6ffffffced6d6ced6d6ced6d6ced6d6c6d6d6ced6d6c6d6d6ced6deced6d6ced6dececed6ce
+d6deced6d6848484423939ffffffefffffe7f7fffffffffffff7fffff7fffffff7ffffefffffff
+fffffffffffffff7fffffffffffffffffffffffff7ffffeffffff7fffffffff7ffffffeff7f7f7
+ffffeffffffffffffffff7fffff7f7fffff7ffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffefefefd6dedeffffffce
+d6d6ced6d6ced6d6d6d6dec6d6d6c6d6debdd6e7a5c6de4a636b292108decebdcececec6d6dece
+d6ded6dee7dedee7d6d6deced6d6dedee7ced6deced6dececed6ced6deced6d6ced6dec6d6d6ce
+d6dec6d6d6ced6dec6d6d6ced6dec6ced6c6ced6ced6d6ced6d6d6e7deceded69ca59cadc6b5a5
+b5a5b5c6b57b8c7b3942394a4a4a4a524a4a4a4a424a4239423942524aa5bdc60010421829a542
+42de2939bd10187b29425a394a42424a4252524a524a4a42423921311818211021212121292900
+0808d6dedec6c6ceced6ded6dee7bdc6cec6cedeced6dec6ced6ced6deced6d6ced6deced6d6ce
+d6d6ced6d6848484424242000000d6d6deffffffd6d6dececed6d6dedeced6d6ced6dec6d6d6ce
+d6dec6d6d6ced6deced6d6ced6deced6d6d6d6de7b84844a4a4afffffffffffff7ffffffffffff
+fffffffff7fffffffffffffffffffffffffff7f7fffffffffff7fffffffffffffffffffffffff7
+fffff7fffffffffffffff7fffffffffffff7fffffffffffffffffffff7fffffffffffffffff7ff
+fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7
+f7f7ffffffffffffcececeffffffced6d6d6d6deced6d6d6dedec6d6d6c6d6debdcedebddef752
+6373423121d6ceb5efefefc6d6deced6dec6ced6ceced6dedee7d6d6dec6c6ced6dee7dedee7ce
+d6dec6ced6ced6deced6d6ced6deced6d6ced6deced6d6ced6dec6d6d6d6dee7c6ced6d6dee7ce
+d6d6bdcececeded684948c9cad9cadbdb5a5b5a5adb5ad525a52424a424a4a4a5252524242424a
+4a424a5252a5b5ce0000421821ad3131d63139c608187b394a6b394a424a4a4a52524a52525231
+3131182121101818182121000808000000ceced6dee7efced6d6c6ced6d6dee7ced6deced6dece
+d6dec6d6deced6deced6d6ced6deced6d6d6dede848484424a4a000000ceced6ffffffced6d6ce
+d6d6ced6d6ced6d6c6d6d6ced6dec6d6d6ced6d6ced6d6ced6dececed6ced6d6ced6d684848c31
+3131ffffffffffffffffffefefeffffffffffff7ffffffffffffffffffffffffffffffffffffff
+fff7ffffffffffffffffffffffffeffff7f7fffffffffffffffffffffffffffff7ffffeff7f7ff
+fffffffffffffff7fffff7ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffff7f7f7ffffffffffffffffffffffffffffffefefefd6d6d6ffffffced6d6ced6d6ced6d6ce
+d6d6c6d6d6c6d6debdd6e7adc6de4a5a6b08000018100000000000000800000800081000000084
+8c8cd6d6deced6d6c6ced6ced6dec6ced6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6dec6
+d6d6ced6dec6ced6d6dedeced6dec6cecec6d6d6d6e7dec6d6ceadbdadadb5ad9cad9cadb5ad84
+8c8439423952524a4242425252524a4a42525252adadce0008523939bd3131bd3939b518216b39
+425a424a4a4a4a4252524a423939292129101021181829000808081010d6deded6dedeb5b5bdd6
+dedec6ced6ced6dec6ced6ced6dec6d6d6ced6dec6d6d6ced6deced6d6d6d6d6ced6d684848442
+4242000000d6d6deffffffd6dedeced6d6cededec6d6d6cededec6d6d6ced6dec6d6d6cededece
+d6d6ced6deced6d6d6d6de7b848452524a31393139424a293139424a4a4a42394a42394a423939
+424239424a3939424a42425a524a524a423939423939424a424a393931395242425242524a524a
+424a4a39394a4239394a42394a42424a52393139524a42524a424a4a4a39394242424242424242
+42424242424242424242424242424242424a4a4a3939393939394242424a4a4a3131315a5a5ace
+ceceffffffced6d6d6d6deced6d6d6dedec6ced6ced6e7bdd6debdd6efbdd6dee7dec6e7d6bdd6
+d6d6ced6e7d6dee7c6ced6d6deded6deded6d6dececed6d6dedececed6ced6d6d6dedeced6dece
+d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6deced6debdcecebdc6c6e7f7efbdcec6d6
+e7de738473a5b5adadbdadb5bdad9ca594525a524a4a424a4a42524a4a52424252424a9494ad29
+295a5a63ad424a9c526394425a6b42524a4a5242524a4a42393931292121181018181810101810
+1010000000d6dedecececededee7d6e7e7c6ced6ced6deced6dec6d6deced6deced6deced6dece
+d6d6d6d6deced6d6d6d6de848484424a4a000000ceced6ffffffced6d6ced6d6ced6d6ced6d6c6
+d6d6ced6d6c6d6d6ced6deced6d6ced6dececed6ced6deced6d68484847b7b7b8c8c8c737b8484
+949c737b7b8c8c84948c84847b7b7b7b847b848c7b8484848484847b7b8c848484848c84849484
+7b848c8c8c73847b7b847b7b7b84847b8c8c84848c847b7b847b848c8c737b847b7b8c8c84848c
+847b73737b848c947b848484848c84848484848484848484848c8484848484847b7b8484848484
+8c8c7b7b7b7b7b7b8c94947b7b7b7b8484ffffffced6d6ced6d6ced6d6ced6dec6d6d6c6d6debd
+d6deb5cee7c6d6deded6cee7dececed6d6d6dee7bdc6ced6d6deced6d6ceced6ceced6d6d6dece
+ced6d6d6deced6dececed6ced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6c6
+d6d6ced6d6dee7e7b5c6c6c6d6d6ced6ceced6ce52635a949c94848c8473737352524a39393952
+524a4a42425a4a425a4a4a5a525a29294229295229315a213139425252424a3952524a4a424231
+2121181008181008100810100810000000dee7e7cececed6dedec6ced6c6ced6c6ced6ced6dec6
+d6d6ced6dec6ced6ced6deced6d6ced6deced6d6ced6d6ced6d6848484424242000000d6d6deff
+ffffd6d6dececed6d6dedeced6d6ced6dec6d6d6d6dee7c6ced6ced6d6ced6d6ced6d6c6ced6d6
+d6ded6d6ded6d6dececed6cededebdc6ceced6d6dededed6d6d6d6deded6d6deced6ded6d6dece
+d6d6d6deded6d6d6d6d6deced6ded6d6deced6d6d6ded6ced6d6d6d6ded6d6ded6d6deced6d6d6
+dedeced6d6d6d6deced6ded6deded6d6d6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6dedece
+d6d6d6d6deced6d6d6dedeced6d6d6d6deced6d6d6dedeced6d6d6d6deced6d6ced6d6d6d6ded6
+d6dec6ced6d6d6deced6dec6d6dec6ced6c6d6e7c6d6ded6d6d6d6d6d6d6d6deced6d6ced6dece
+d6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6
+d6deced6d6ced6deced6d6ced6deced6d6ced6dec6d6d6cededeced6d6ced6d6ced6d64a525239
+3939393939423939423939292121312929524a4a524a425a4a4a5a52524a4a4a4a4a524a4a524a
+5252424a42525252424239292121212118100808181810101010000000adb5b5bdc6ced6dedece
+d6deced6deced6d6ced6dec6ced6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6d6
+dede848484424a4a000000ceced6ffffffced6d6ced6d6ced6d6ced6d6c6d6d6ced6debdcecec6
+d6d6ced6d6d6dedeced6deced6dec6cecec6c6ceced6deced6dededee7dedee7ced6deced6debd
+c6ceced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ce
+d6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dece
+ced6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ce
+d6deced6d6ced6deced6d6d6dedeced6d6ced6d6ced6d6ced6dec6ced6ced6dec6ced6ced6dece
+d6d6ced6deced6d6ced6d6ced6d6d6d6d6ceced6ced6deced6d6ced6dececed6ced6deced6d6ce
+d6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dec6d6d6ced6dec6d6d6ced6dec6
+d6d6ced6d6ced6d6d6d6dec6cece1818182929292118182929212121211810102118183931294a
+4239524a4252524a524a4a52524a4a4a424a4a4218181821211818181018181810181000080000
+0000182118bdc6ceced6deced6deced6dec6ced6ced6deced6deced6dec6d6d6ced6deced6d6ce
+d6dec6d6d6ced6deced6d6ced6deced6d6848484424242000000d6d6deffffffd6dedeced6d6ce
+dedec6d6d6cededec6d6d6cededeced6deced6d6c6cececed6ded6dedededee7dedee7ced6debd
+c6ceced6d6ceced6ced6ded6d6ded6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6
+d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6dece
+d6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ce
+d6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6d6d6deced6d6d6dedeced6d6ced6dece
+d6d6ced6deced6deced6dec6d6deced6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6
+d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6dece
+d6d6ced6dec6d6d6ced6deced6d6ced6deced6d6d6d6deced6d6dee7e7d6d6d621212121212121
+1818212121312929292121312921393931524a4a524a4a52524a4a424239393929292129292918
+1818182118080808080808101818000800ced6d6d6dedeced6decededec6ced6ced6d6ced6ded6
+dedeced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6d6d6de848484424a4a00
+0000ceced6ffffffced6d6ced6d6ced6d6ced6d6c6d6d6ced6d6c6ced6cededeced6d6ced6d6ce
+ced6c6ced6bdc6cececed6d6d6ded6deded6d6deced6d6c6ceced6dee7d6dedec6ced6ced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6ced6d6c6cececed6dec6d6d6ced6d6c6d6deced6dec6d6d6ced6dec6d6d6ced6deced6d6ce
+d6deced6d6ced6d6ced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dece
+ced6ced6deced6d6ced6dececed6ced6dec6d6d6ced6dec6d6d6ced6deced6d6ced6deced6d6ce
+d6d6ced6d6cecececed6d66b6b6b181818101010292121292929292121423939524a4a5a5a525a
+525252524a3939392931291818182121210810100008080008089ca5a5dee7e7d6dedec6ced6ce
+d6dec6ced6c6d6d6c6ced6cededeced6d6c6ced6ced6d6ced6dec6d6d6ced6deced6d6ced6dec6
+d6d6ced6d6ced6d6848484424242000000d6d6deffffffd6d6dececed6d6dedeced6d6ced6dec6
+d6d6ced6d6c6d6d6d6dedecededed6dedec6ced6d6d6dedee7e7c6ced6ced6ded6dee7ced6dece
+d6dececed6d6d6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6dece
+d6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ce
+d6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dece
+ced6ced6deced6d6ced6deced6d6e7e7efced6d6ced6d6ced6deced6dec6ced6ced6deced6dece
+d6deced6deced6deced6d6d6d6deced6d6d6d6d6ced6d6d6d6deced6d6ced6deced6d6d6d6dece
+d6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6ced6deced6d6ce
+d6dec6d6d6ced6deced6d6ced6deced6d6ced6d6ced6d6d6d6debdbdc6efefef18181821212929
+29294242424a4a4a5a5a5a5a5a5a5a5252424242313131181818212121101818080810000808ce
+d6d6d6dedececed6c6cececed6deced6d6cededeced6d6d6dedeced6decededeced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6d6dede848484424a4a000000ceced6ffffffce
+d6d6ced6d6ced6d6ced6d6c6d6d6ced6deced6dec6d6d6ced6d6d6dedec6ced6d6d6dedee7e7e7
+efefffffffffffffeff7f7fffffffffffffffffff7ffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffeff7f7d6dedececed6d6
+dedec6ced6ced6d6ced6dec6d6dec6ced6ced6deced6d6ced6deced6d6ced6d6ced6d6d6d6d6ce
+ced6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ce
+d6deced6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6deced6d6ced6decededec6ceced6
+dedeeff7f7b5bdbdc6cececed6d631393931313139393939393939424229313121212110101008
+0808080810000000c6cececed6d6ced6d6ced6d6c6ced6ced6deced6d6ced6deced6deced6dec6
+ced6ced6d6ced6d6d6dedec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6deced6d684
+8484424242000000d6d6deffffffd6dedeced6d6cededec6d6d6cededec6d6d6ced6debdceced6
+dee7d6dee7ced6d6ceced6c6c6ce8c9494c6cecedee7efced6dec6ced6dee7e7ced6d6ced6d6ce
+d6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ce
+d6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6dece
+d6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6
+d6deced6d6ffffffd6d6deced6d6d6dedeced6dec6d6d6d6dee7c6ced6ced6dec6d6deced6dece
+d6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ce
+d6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6cededeced6d6bdcececed6d6cededec6ced6c6cececed6ded6dee7ced6d6cecececececed6
+deded6d6ded6dedeced6d6d6d6deced6d6d6d6deced6d6d6d6ded6dee7c6ced6cededed6dee7c6
+ced6cededeced6d6ced6deced6d6ced6d6c6ced6ced6deced6deced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6d6d6de848484424a4a000000ceced6ffffffced6d6ced6d6ced6d6ce
+d6d6c6d6d6ced6d6ced6dec6ced6ced6d6ced6d6c6c6cedee7e7c6ced67b8484424a52bdc6ced6
+dee7ceced6ceced6ced6d6ced6d6d6dedeced6d6ced6dececed6ced6deced6d6ced6dececed6ce
+d6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6dece
+d6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ce
+d6dececed6ced6deced6d6ced6dececed6ced6d6ffffffd6d6d6bdc6ced6dedec6ced6ced6dece
+d6dec6d6dec6d6d6ced6dec6d6d6ced6deced6d6ced6deced6d6ced6d6ced6d6ced6dececed6ce
+d6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6dece
+d6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6d6ced6d6d6e7e7bdc6c6ced6d6d6e7e7c6
+d6d6c6ceced6dedeced6d6d6d6deced6d6d6d6deced6d6ced6d6ceced6ced6deced6d6d6dedec6
+ceced6dee7c6ced6ced6d6bdced6cedee7c6ced6ced6d6c6d6d6ced6deced6ded6dedeced6d6ce
+d6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6d6ced6d6848484424242000000d6
+d6deffffffd6d6dececed6d6dedeced6d6ced6dec6d6d6ced6dec6d6d6ced6deced6d6ced6dece
+d6d6d6d6de7b8484424a4ac6ced6d6d6deced6ded6dee7c6ced6ced6d6d6d6dececed6d6d6ded6
+dee7bdc6ced6dee7d6dee7bdc6ceced6ded6d6deced6d6ced6deced6d6d6d6deced6d6ced6dece
+d6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6
+d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6ffffffce
+d6d6d6d6deced6d6d6dedec6d6d6ced6dec6d6d6c6ced6ced6ded6dee7c6ced6ced6ded6dedece
+d6d6ced6d6d6dedec6c6ced6dee7ced6ded6d6dececed6d6dee7c6ced6d6d6deced6d6ced6dece
+d6d6d6d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dec6d6d6ce
+d6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6d6d6deced6d6d6d6deced6d6d6d6dece
+d6d6ced6deced6deced6deced6deced6deced6deced6deced6deced6dec6d6deced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6d6dede848484424a4a000000ceced6ffffffced6d6ced6d6ced6d6ced6d6c6d6d6ced6dec6
+d6d6ced6d6ced6d6ced6dececed6ced6d6ced6d684848c394242d6dedec6ced6ceced6ced6d6ce
+d6d6d6d6deced6deced6d6c6ced6ceced6c6ced6ced6dec6cecededee7ced6d6ceced6ced6dece
+d6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ce
+d6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dece
+ced6ced6deced6d6ced6deffffffced6d6ced6d6ced6d6ced6deced6d6c6d6deced6deced6debd
+cecebdc6ce8c949c000000000000000000000808c6c6ceced6d6c6c6ced6dee7c6cecec6ced6d6
+deded6dedececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dec6d6d6ced6d6ced6d6ce
+d6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6c6d6dec6d6d6ced6dec6
+d6d6ced6deced6d6ced6dececed6ced6deced6d6ced6dec6ced6ced6dececedeced6dec6ced6ce
+d6dec6cedeced6dec6ced6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6dece
+d6d6ced6dec6d6d6ced6deced6d6ced6deced6d6848484424242000000d6d6deffffffd6dedece
+d6d6cededec6d6d6cededec6d6d6ced6dec6d6d6cededeced6d6ced6deced6d6d6d6de7b848439
+424abdc6c6dedee7d6dee7d6d6deced6deced6d6c6ceced6dee7ceced6dedee7ced6d6ced6dec6
+cecececed6ced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6
+d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6dece
+d6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ffffffced6d6d6dedeced6d6d6
+dedec6ced6ced6dec6d6dec6ced6d6dee7424a52000008c6cececed6ded6d6de8c949400000884
+8c8cdee7efc6ceced6deded6dedebdc6c6c6cececed6deced6d6d6d6deced6d6ced6deced6d6d6
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dec6d6deced6dec6
+d6deced6dec6d6deced6dec6d6deced6deced6d6ced6deced6d6ced6deced6d6ced6deced6dece
+d6deced6deced6deced6deced6deced6deced6deced6deced6deced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6d6d6de84848442
+4a4a000000ceced6ffffffced6d6ced6d6ced6d6ced6d6c6d6d6ced6d6c6d6d6ced6deced6d6ce
+d6dececed6ced6deced6d67b848c424a4adedee7ced6d69c9ca5313942ced6ded6deded6dee7bd
+c6c6636b73000000000808525a63d6d6deced6d6d6dedeced6d6ced6dececed6ced6deced6d6ce
+d6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dece
+ced6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ce
+d6d6ffffffced6d6ced6d6ced6d6ced6deced6d6c6d6d6ced6deced6de73848c000000adb5bdd6
+dedeced6dec6c6cec6cece5a5a63212929c6c6cececed6c6ced6d6dedeced6dedee7efced6d6ce
+d6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dec6d6d6ced6d6ced6d6ced6dec6
+d6d6ced6dec6d6d6ced6dec6ced6ced6dec6d6d6ced6dec6ced6ced6deced6d6ced6dec6d6d6ce
+d6deced6d6ced6dec6ced6ced6deced6d6ced6dec6ced6ced6dececedeced6dec6ced6ced6dece
+d6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ce
+d6dec6d6d6ced6d6ced6d6848484424242000000d6d6deffffffd6d6dececed6d6dedeced6d6ce
+d6dec6d6d6ced6dec6d6d6ced6deced6d6ced6deced6d6d6d6de7b8484394242ced6d6bdc6cede
+e7ef42424aa5a5adbdc6ceced6de94949c313939ced6dec6ced62931319ca5adced6dec6ced6d6
+d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6dece
+d6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ce
+d6deced6d6d6d6deced6d6ced6deced6d6ffffffced6d6d6d6deced6d6d6dedec6d6d6ced6dec6
+d6d6b5bdc6182129636b6bced6d6d6dee7ced6d6d6d6ded6d6d69ca5a50000088c949cc6c6ced6
+dedec6ced6c6ced6ceced6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6deced6deced6deced6deced6dece
+d6deced6deced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6d6d6deced6deced6dece
+d6ded6d6deced6deced6deced6deced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6d6dede848484424a4a000000ceced6ff
+ffffced6d6ced6d6ced6d6ced6d6c6d6d6ced6dec6d6d6ced6d6ced6d6ced6dececed6ced6d6ce
+d6d684848c313939dee7e7d6d6ded6dede737b845a636bdedee7c6ced6bdc6c6dedee7ced6dece
+d6de6b737b5a6363dee7efceced6ceced6ced6deced6d6ced6dececed6ced6deced6d6ced6dece
+ced6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ce
+d6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6deffffffced6d6ce
+d6d6ced6d6ced6deced6d6c6d6deced6deb5bdc60008108c9494ced6debdc6cebdc6c6dededece
+d6d6ced6dececed6ced6deced6deced6ded6dee7ceced6d6dedececed6ced6deced6d6ced6dece
+ced6ced6deced6d6ced6dec6d6d6ced6d6ced6d6ced6dec6d6d6ced6deced6d6ced6dec6ced6ce
+d6dececedeced6dececed6ced6dececedeced6dec6d6d6ced6d6ced6d6ced6dec6d6d6ced6dece
+d6d6ced6dececed6ced6deced6d6ced6dececed6ced6dececedeced6dec6d6d6ced6deced6d6ce
+d6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dece
+d6d6848484424242000000d6d6deffffffd6dedeced6d6cededec6d6d6cededec6d6d6ced6dec6
+d6d6cededeced6d6ced6deced6d6d6d6de7b8484424a52c6c6cececed6c6c6ceced6d6293139b5
+bdc6ced6d6d6dedeced6ded6dedec6ced6848c8c5a6363d6dee7c6ced6ced6deced6d6d6d6dece
+d6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ce
+d6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6dece
+d6d6d6d6deced6d6ffffffced6d6d6dedeced6d6d6dedec6ced6ced6dec6d6de949ca500081094
+9ca5d6dededee7e7c6cecee7efefc6cececed6deced6d6c6ced6d6dedececed6ced6d6dee7e7c6
+c6ceced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6dec6d6d6cededeced6d6ce
+d6deced6d6d6d6deced6deced6deced6ded6d6deced6ded6d6dececeded6d6deced6deced6dece
+d6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6ded6d6deced6ded6
+d6deced6deced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6d6d6de848484424a4a000000ceced6ffffffced6d6ced6d6ce
+d6d6ced6d6c6d6d6ced6d6c6d6d6ced6deced6d6ced6dececed6ced6deced6d67b848c313942de
+e7e7c6ceced6dee7ced6d67b7b84848c8cd6d6de949ca5212129c6c6ceced6d6393942848c8cce
+d6d6d6d6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ce
+d6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6dece
+d6d6ced6dececed6ced6deced6d6ced6dececed6ced6d6ffffffced6d6ced6d6ced6d6ced6dece
+d6d6c6d6d6ced6de9ca5ad000008a5adadc6ced6ceced6d6dedec6ceced6dedececed6d6dedece
+d6dec6ceced6dee7ceced6bdc6ced6dee7ced6d6ced6dececed6ced6deced6d6ced6dececed6ce
+d6deced6d6ced6dec6d6d6ced6d6ced6d6ced6dececed6ced6deced6d6ced6dececed6ced6dece
+ceded6d6dececed6ced6deced6d6ced6dec6d6d6ced6d6ced6d6ced6dececed6ced6deced6d6ce
+d6dececed6ced6dececed6d6d6dececed6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6
+d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6d6ced6d684848442424200
+0000d6d6deffffffd6d6dececed6d6dedeced6d6ced6dec6d6d6ced6dec6d6d6ced6deced6d6ce
+d6deced6d6d6d6de7b8484424a52ced6dec6d6d6cededec6ced6b5bdbd42424abdc6cebdc6c600
+080800080800000063636bd6d6d6dee7e7ced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6d6ced6dec6ced6ced6dedee7e7ced6d6d6dedeced6d6ff
+ffffced6d6d6d6deced6d6d6dedec6d6d6ced6dec6d6d6b5bdc6000810848c8cdee7e7c6ced6c6
+ced6d6deded6d6ded6dedeced6d6b5b5bdced6d6dedee7c6ceced6dee7c6ced6d6d6deced6d6ce
+d6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6ded6d6deced6deced6deced6d6cededeced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6d6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6d6dede848484424a4a000000ceced6ffffffced6d6ced6d6ced6d6ced6d6c6d6d6ce
+d6dec6d6d6ced6d6ced6d6ced6dececed6ced6d6ced6d67b848c293939c6d6d6c6ced6c6d6d6d6
+dee7c6ced65a636ba5adadadb5b5313939bdc6c6d6d6d6d6d6d6dededececececed6d6ced6d6ce
+d6deced6decededeced6d6ced6deced6decededeced6d6ced6deced6decededeced6d6ced6dece
+d6decededeced6d6ced6deced6decededeced6d6ced6deced6decededeced6d6dee7e7ced6d6ce
+d6d6bdcecec6cececed6deced6d6ffffffced6d6ced6d6ced6d6ced6deced6d6c6d6deced6debd
+cece0008106b737bbdc6ced6dededee7efc6c6c6ced6d694949c0008109ca5a5ced6d6ceced6ce
+d6deced6deced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6dece
+d6d6ced6dececed6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ce
+d6dec6d6d6ced6d6c6d6d6ced6dec6d6d6ced6d6ced6d6ced6dec6d6d6ced6d6ced6d6ced6dece
+d6d6ced6d6ced6d6d6d6dececed6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ce
+d6deced6d6ced6dec6d6d6ced6deced6d6ced6deced6d6848484424242000000d6d6deffffffd6
+dedeced6d6cededec6d6d6cededec6d6d6ced6dec6d6d6cededeced6d6ced6deced6d6d6d6de7b
+8484424a52bdcecedee7efced6deced6d6ced6dea5adb54a4a52bdc6c6313939c6ceced6dedec6
+c6c6d6d6d6d6d6d6d6dedeced6d6c6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6
+d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ce
+d6deced6d6ced6dec6ced6c6ced6ced6d6ced6deced6dedee7e7c6d6d6ffffffced6d6d6dedece
+d6d6d6dedec6ced6ced6dec6d6ded6dee77b848c000008c6ced6ced6d6c6c6ced6deded6dede5a
+636b293131ced6deced6ded6dedec6c6ced6dee7ced6d6ced6deced6d6d6d6deced6d6ced6dece
+d6d6d6d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6cededec6d6d6ced6dec6d6d6cededece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6d6d6de84
+8484424a4a000000ceced6ffffffced6d6ced6d6ced6d6ced6d6c6d6d6ced6d6c6d6d6ced6dece
+d6d6ced6dececed6ced6deced6d67b848c293139d6e7ef636b7300000800080800000800000008
+1018bdc6c6101010000000000000101010adadadcececed6d6d6ced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6ded6dedec6ced6c6ceced6dee7ced6dec6d6d6c6
+ced6ceced6ffffffced6d6ced6d6ced6d6ced6deced6d6c6d6d6ced6debdc6ceced6de31393908
+1010b5bdbdced6d6d6dede737b7b0808108c949cceced6ced6d6d6d6deced6ded6dee7c6ced6ce
+d6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dec6d6d6ced6deced6d6ce
+d6dec6d6d6ced6deced6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6
+d6d6ced6d6c6d6d6ced6dec6d6d6ced6d6c6d6d6ced6dec6d6d6ced6d6c6d6d6ced6dec6d6d6ce
+d6d6ced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6dece
+d6d6ced6dec6d6d6ced6d6ced6d6848484424242000000d6d6deffffffd6d6dececed6d6dedece
+d6d6ced6dec6d6d6ced6dec6d6d6ced6deced6d6ced6deced6d6d6d6de7b8484424a4aced6dece
+d6ded6dee7ced6d6bdc6cedee7e7bdc6c6d6dedec6c6cededededee7e7bdbdbdd6deded6d6d6ce
+ceced6d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6d6d6dece
+ced6d6d6deced6d6ceced6c6cececed6d6d6dedeffffffced6d6d6d6deced6d6d6dedec6d6d6ce
+d6dec6d6d6d6e7efc6ced6dee7e7737b7b081018000000080808000808b5bdc6e7e7efdee7efc6
+ced6bdc6ced6d6ded6deded6dee7d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6ce
+d6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6dece
+d6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6dec6d6d6ce
+d6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6d6dede848484424a4a000000ce
+ced6ffffffced6d6ced6d6ced6d6ced6d6c6d6d6ced6dec6d6d6ced6d6ced6d6ced6dececed6ce
+d6d6ced6d67b848c313942ced6dec6ced6d6dedeced6d6d6dee7d6d6dec6ced6ced6d6d6d6dece
+d6d6ced6d6dededecececed6d6d6d6d6dececed6ced6deced6d6ced6dececed6ced6deced6d6ce
+d6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dece
+ced6ced6deced6d6ced6dec6ced6d6d6deced6dec6ced6ced6dedee7e7ceced6ced6d6ffffffce
+d6d6ced6d6ced6d6ced6deced6d6c6d6deced6debdc6ced6dee7ced6d6c6ced6ceced6ced6d6c6
+cececed6d6ced6d6ceced6ceced6d6d6ded6deded6d6dec6c6cececed6ceced6ced6deced6d6ce
+d6dececed6ced6deced6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6
+d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ce
+d6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6c6d6dec6d6d6ced6dec6d6d6ced6dece
+d6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ce
+d6deced6d6848484424242000000d6d6deffffffd6dedeced6d6cededec6d6d6cededec6d6d6ce
+d6dec6d6d6cededeced6d6ced6deced6d6d6d6de7b8484394242ced6d6d6dee7c6cececed6d6ce
+d6d6c6cecedee7e7ced6d6c6cececed6d6c6cecee7e7e7c6ceced6d6deced6d6d6d6deced6d6d6
+d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6dece
+d6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6d6d6deced6ded6d6dec6c6ced6
+dedeced6d6bdc6cededee7ffffffced6d6d6dedeced6d6d6dedec6ced6ced6dec6d6deced6dece
+d6ded6dee7c6ced6d6dededee7e7d6deded6d6d6ced6d6d6dedececed6c6cecededee7bdc6ced6
+d6deced6deced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6dec6d6d6ced6dece
+d6d6ced6dec6d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6d6
+d6deced6ded6d6deced6ded6d6deced6ded6d6deced6deced6deced6deced6deced6deced6dec6
+d6deced6deced6deced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6d6d6de848484424a4a000000ceced6ffffffced6d6ce
+d6d6ced6d6ced6d6c6d6d6ced6d6c6d6d6ced6deced6d6ced6dececed6ced6deced6d67b848c4a
+4a523139393139394a525231393939424a39424231393939424242424a424a4a42424239393942
+4a4a31393939424239424239424a39424239424a39424239424a39424239424a39424239424a39
+424239424a39424239424a39424239424a39424239424a39424239424a39424239424a39424239
+424a31393939424239424a39424a42424a3139394a5252c6ceceffffffced6d6ced6d6ced6d6ce
+d6deced6d6c6d6d6ced6deced6deced6dec6ceced6dee7c6ced6c6cececed6d6d6d6deced6dec6
+ced6ced6d6d6d6dec6ceced6dedeced6deced6deced6d6ced6dececed6ced6deced6d6ced6dece
+ced6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ce
+d6deced6d6ced6dececed6ced6dececed6d6d6ded6ced6d6d6ded6ced6d6d6dececed6d6d6dece
+ced6d6d6dececed6ced6deced6d6ced6dec6ced6ced6deced6d6ced6dec6d6d6ced6deced6d6ce
+d6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6d6ced6d684848442
+4242000000d6d6deffffffd6d6dececed6d6dedeced6d6ced6dec6d6d6ced6decededec6ced6ce
+d6d6ced6deced6deced6de7b848c7b848c737b7b7b8484848c8c848c8c7b8484848c94737b7b84
+848c7b848484848c7b848484848c7b848484848c7b848484848c7b848484848c7b848484848c7b
+848484848c7b848484848c7b848484848c7b848484848c7b848484848c7b848484848c7b848484
+848c7b848484848c7b848484848c7b8484848c8c7b848c84848c7b848484848c7b7b847b848c7b
+8484ffffffd6d6d6d6deded6dedeced6deced6decededec6ced6ced6deced6deced6deced6d6d6
+d6deced6d6d6d6d6ced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6dece
+d6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6dee7c6ced6c6ced6c6d6d6ced6deced6ded6
+dedeced6d6ced6d6d6dee7d6dee7bdc6ced6deded6d6dec6ced652525a39393939313939313142
+39423129312121210808080000081810185a5a63d6d6dec6c6cededee7d6d6dececed6d6deded6
+dedec6ced6ced6dec6ced6ced6deced6d6c6ced6d6dedeced6deced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6d6dede848484424a4a000000ceced6ffffffced6d6ced6d6ced6d6ced6d6c6
+d6d6ced6deced6d6cededeced6d6d6dee7c6ced6c6c6ced6dedeced6d6ceced6dee7e7d6dedece
+d6d6c6cececed6d6ced6d6d6dedececed6ced6d6ced6d6ced6d6ceced6ced6d6ced6d6ced6d6ce
+ced6ced6d6ceced6ced6dececed6ced6d6ceced6ced6dececed6ced6d6ceced6ced6dececed6ce
+d6d6ceced6ced6dececed6ced6d6ceced6ced6dececed6ced6d6ceced6ced6deced6d6ced6dece
+ced6d6d6deced6d6d6d6deced6d6d6d6dededee7c6cececed6d6ced6dec6cececed6deced6dece
+d6dec6ced6ced6deced6d6ced6deced6d6ced6d6ced6d6d6d6d6ceced6ced6deced6d6ced6dece
+ced6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dec6cecece
+d6deced6deced6dec6ced6ced6d6c6ced6ceced6ced6dececed6c6cecedee7e7ced6d618182121
+29293131393131314a424a5a525a635a63524a5242394231293129212910081018101810101010
+1010c6c6cedededececed6ceced6bdbdc6d6dee7d6dee7c6ced6d6dee7ced6d6ced6d6c6ced6c6
+d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6deced6d6848484424242000000d6d6deff
+ffffd6dedeced6d6cededec6d6d6cededec6d6d6d6dedec6ced6ced6d6d6deded6dedec6ced6ce
+d6d6d6d6dec6ced6c6cececed6d6ced6d6dee7e7ced6d6c6ceced6d6ded6d6deced6d6d6d6dece
+d6d6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6
+d6deced6d6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6d6dece
+d6d6d6d6deced6d6d6d6deced6d6d6d6deced6ded6deded6d6ded6d6deced6d6ced6d6c6ceced6
+dedeced6d6ced6d6ced6d6ced6deced6deced6dec6d6deced6deced6d6ced6deced6d6d6d6dece
+d6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ce
+d6deced6d6d6d6deced6d6ced6d6cededed6dedec6ced6ced6d6ced6d6d6deded6d6ded6d6dec6
+ceced6d6dececed60808082121212121292121213129314239426b5a63524a52635a5a4a42424a
+424a292129292129181018080008080008100810cececeded6ded6d6dee7eff7b5c6c6c6d6d6ce
+d6debdc6ced6deded6dedeced6deced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6d6
+d6de848484424a4a000000ceced6ffffffced6d6ced6d6ced6d6ced6d6c6d6d6ced6d6bdcecec6
+cecebdcecec6ced6d6d6dedee7e7ceced6ced6d6dee7e7ced6d6ced6d6ced6d6ced6d6d6dedec6
+ceced6dedeced6d6d6d6deced6d6ced6d6ced6d6d6d6dececed6ced6deced6d6d6d6dececed6ce
+d6deced6d6d6d6dececed6ced6deced6d6d6d6dececed6ced6deced6d6d6d6dececed6ced6dece
+d6d6d6d6dececed6ced6deced6d6d6d6dececed6ced6deced6d6d6d6deced6d6ced6deced6d6d6
+d6dececed6ced6d6ceced6d6d6d6d6d6deced6d6ced6d6ced6debdc6ceced6dec6d6d6ced6dec6
+d6d6ced6deced6d6ced6deced6d6ced6d6ced6d6ced6dececed6ced6deced6d6ced6dececed6ce
+d6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6ded6dedec6ced6c6ced6ce
+d6ded6dedececed6d6d6dec6c6cee7e7ef10101810101821212129293129212931313129212939
+3139524a4a4a424a5a525a524a5242424229292921182131292910081010101029212908000042
+3942ceced6b5bdbddee7e7c6ced6d6dee7c6cecec6ced6ced6deced6d6ced6d6ced6dec6d6d6ce
+d6deced6d6ced6dec6d6d6ced6d6ced6d6848484424242000000d6d6deffffffd6d6dececed6d6
+dedeced6d6ced6dec6d6d6d6e7e7d6e7e7dee7efced6d6ceced6ceced6ced6d6dedee7ced6d6ce
+cecedededeced6d6c6ceced6d6d6dee7e7cecececed6deced6d6ced6deced6d6ced6deced6d6ce
+d6dececed6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6d6dece
+d6d6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6d6deced6d6d6
+d6ded6d6ded6dedeced6d6ced6d6ced6d6d6d6deced6d6dedee7ced6d6ced6dec6cececed6dece
+dedec6d6d6ced6deced6deced6deced6deced6d6d6d6deced6d6d6d6d6ced6d6d6d6deced6d6ce
+d6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6dece
+d6d6d6dedeced6d6ced6ded6d6dededee7ced6d6ceced6ceced6dedee700000829293129212929
+29291810181810182118213131313131314a424a4a4a4a5252524a4a4a42424239313129292910
+1010212121181818080008100808080000393139dee7e7bdceced6dee7d6deded6dedec6ceced6
+dedec6ced6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6d6dede848484424a4a00
+0000ceced6ffffffced6d6ced6d6ced6d6ced6d6c6d6d6ced6deb5c6c6bdcecec6ced6cededece
+d6d6ced6dedee7e7eff7f7fffffffffffff7f7f7fffffffffffffffffffffffff7fffff7ffffff
+fffffffffffffffff7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffffff7ffffffffffffffffffffffffffffffffffffffffffffffef
+f7f7d6dedeced6d6ced6d6c6d6d6d6dedec6ced6ced6dec6ced6ced6deced6d6ced6deced6d6ce
+d6d6ced6d6d6d6d6ceced6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6dece
+d6d6ced6dececed6ced6deced6d6ced6deced6d6c6ced6ced6d6d6dee7ceced6ceced6d6d6dede
+dee794949c4239423131312921293129313931392118214a424a4a4a4a4a52524a52524a4a4a39
+4242394242424a4a525252424242424242181818181818181818181818181818000000b5bdc6d6
+dee7b5bdc6d6dedebdc6c6d6dedec6ced6d6dedec6d6d6ced6deced6d6ced6dec6d6d6ced6dece
+d6d6ced6deced6d6848484424242000000d6d6deffffffd6dedeced6d6cededec6d6d6cededec6
+d6d6d6e7e7d6dedeced6ded6deded6dedec6cecec6c6ce8c9494ceced6e7efefced6d6ced6d6de
+dee7bdc6c6d6deded6deded6d6deced6d6d6d6deced6ded6d6deced6ded6d6deced6ded6d6dece
+d6d6d6d6ded6d6ded6d6deced6d6d6d6ded6d6ded6d6deced6d6d6d6ded6d6ded6d6deced6d6d6
+d6ded6d6ded6d6deced6d6d6d6ded6d6ded6d6deced6d6d6d6ded6d6ded6d6ded6d6ded6dedece
+d6d6d6d6ded6d6ded6d6dec6c6ceffffffd6deded6dedeced6deced6deced6deced6dec6d6d6ce
+d6dec6d6deced6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6dece
+d6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6d6dedec6ceced6
+deded6d6decececed6d6dee7e7e7c6c6ce524a528c848c8c848c7b737b6b636b3121295a4a5242
+424a424a42394a424a5a5231423942524a3942424a52523942424a4a4a4a524a424a4a10101010
+1010081008080808081010000808dee7efc6cececed6deced6dec6ced6d6dedec6ced6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6d6d6de848484424a4a000000ceced6ffffffce
+d6d6ced6d6ced6d6ced6d6c6d6d6ced6d6bdceced6dee7c6cececed6d6ceced6d6dee7ced6d67b
+7b84394242f7f7f7fffffff7ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffffffffffffffffffffffff7f7f7e7e7efffffffced6d6bdcecece
+d6debdced6ced6deced6ded6d6deced6d6d6d6dececedeced6deced6d6ced6d6ced6d6ced6d6ce
+d6d6ced6dececed6ced6deced6d6ced6dec6ced6ced6deced6d6ced6dececed6ced6deced6d6ce
+d6dec6ced6ced6deced6dec6ced6d6d6dededee7cececededee7c6c6c67b7b7bb5adadb5adadad
+a5ada5949c524a524a4242524a524a4a4a42424a4a5a5a7b847b6b846b84bd9c6bad8c6b9c7b42
+634a394a424a52523939424a4a52212121181818101008181810080808000008d6dedec6d6d6c6
+ced6d6dedeced6dec6ced6ced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6d6ced6d684
+8484424242000000d6d6deffffffd6d6dececed6d6dedeced6d6ced6dec6d6d6ced6dec6d6d6ce
+d6deced6d6ced6deced6d6d6d6de7b84844a4a4affffffffffffffffffffffffffffffffffffff
+fff7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7ffffffffffff
+fffff7ffffeffffff7fffffffffffffffffffffffffffffffffffffffff7ffffffffffffffffff
+ffffd6cedeffffffd6d6d6ceded6bdd6d6c6dedebdd6d6ced6e7d6cedee7dedecec6ced6cee7ce
+cee7c6d6cec6dececed6d6ceced6dee7e7bdc6c6dee7efc6ced6ced6ded6dee7c6cedec6ced6d6
+dedeced6d6d6d6ded6d6ded6d6deced6deced6e7ced6deced6deced6d6ced6deced6ded6dedec6
+cecededed6adada5bdb5adc6b5b5bdadad9484844a42425a4a524a424a4a4a524a4a5242424abd
+c6ad00310031ad5a31ce734ace84005218425a424a424a4242524a425a52425239212929181029
+1810181818000808d6d6dec6c6ced6dedeced6deced6d6cededeced6deced6d6ced6dec6d6d6ce
+d6deced6d6ced6deced6d6d6dede848484424a4a000000ceced6ffffffced6d6ced6d6ced6d6ce
+d6d6c6d6d6ced6dec6d6d6ced6d6ced6d6ced6dececed6ced6d6ced6d684848c292929ffffffff
+ffffffffffefeffffffffffffff7fffff7fffffffffffffffffffffffffffff7fffffff7efffff
+fffff7fffffffffffffffffffffffffffffffffffffffff7ffffeffff7ffffffffffffffffffff
+ffffffffffeff7f7ffffffffffffffffffe7f7ffefffffeffffffffffffffff7ffefe7ffffffff
+fffff7fffff7ffffffffffffffffffffffd6d6deffffffd6d6d6c6d6d6bdd6d6bdd6debdd6dece
+ceded6d6ded6cecedededececeded6d6efbdd6ceceded6bdc6ced6dee7ceced6d6dedebdc6cec6
+ced6c6d6deb5bdcec6d6deced6dececed6ced6d6ceced6d6d6d6ceced6ced6deced6deced6dec6
+ced6c6d6decedee7c6cecec6d6ced6ded6636363a5a59cbdadadbdadadb5a5a573636352424a4a
+4242524a524a424a42424a524a4aadb59408420818b55218d66b31d673005a10395239524a4a42
+39524a426352425a4a3139311810312118181818080810080810d6dedeced6d6ced6d6ced6d6bd
+cecec6d6d6ced6dec6d6d6ced6dec6d6d6ced6deced6d6d6d6deced6d6848484424242000000d6
+d6deffffffd6dedeced6d6cededec6d6d6cededec6d6d6ced6dec6d6d6cededeced6d6ced6dece
+d6d6d6d6de7b8484525a5afffffff7fffffffffffffffffff7fffffffff7ffefffffffffffffff
+fffffffffffffff7ffffffffffffffffffffffffeff7efffffffffffffffffffffffffffffffff
+fffffffffff7fffffffffffff7f7fffffffffffffffffffffffffffffffffffff7ffffefffffff
+fffff7f7f7ffffffffffffffffffffffffffffffffffffffffffffffffffffffd6cedeffffffd6
+d6d6cededebdd6d6c6dedebdd6d6ced6ded6ceded6ceded6ced6ded6e7c6c6ceced6decededece
+d6d6cededed6deded6d6d6c6ced6d6dee7d6dee7d6dee7ced6dec6ced6d6d6deced6d6d6d6d6ce
+d6d6d6d6deced6deced6dec6cedec6ced6c6ced6d6dee7c6ced6ceded6d6ded684847bbdbdb5c6
+b5adb5a5a59c8c8c5242425a52524a42425a525a4242424a4a52524a4aadad9c18421829b56b21
+ce7342d684005210425a39524a42424a4a4242525a4a5a4a394a39292929182121212110181800
+0008d6dee7ced6d6c6cecedee7e7cededeced6dec6d6d6ced6deced6d6ced6deced6d6d6d6dece
+d6d6d6d6de848484424a4a000000ceced6ffffffced6d6ced6d6ced6d6ced6d6c6d6d6ced6d6c6
+d6d6ced6deced6d6ced6dececed6ced6deced6d67b8484292929ffffffffffffffffffe7e7ff39
+394adee7d6fffff7ffffff5a5a630000000810084a5242ffffffffffff63637300000008100863
+5a52ffffffe7e7e7212931dee7eff7ffff6b73730000000808006b6b63f7ffffffffff73736b08
+00000000004a4a4afffffff7fff7ffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffd6d6deffffffd6d6d6ced6d6c6d6d6c6d6dec6d6d6c6d6d6ced6de18182929
+2931cececedededed6dee7bdc6cec6d6d6c6d6cebdc6c6394242101818b5bdbdc6ced6c6ced6ce
+d6deced6dececed6d6deded6d6d6ced6d6ced6d6ced6dec6ced6c6cedeced6ded6dee7c6ced6ce
+d6d6c6cecedee7de9c9c9cb5b5adb5ada5bdada56b5a5a5242425242425a525242424a4a4a524a
+42524a4a4aadada508391021ad6329d67b42ce7b005a184252315a52424242424242524a4a524a
+4252313139292931292931181821181821bdc6cececed6d6dee7ced6debdcecec6d6d6ced6dec6
+d6d6ced6deced6d6ced6dececed6ced6d6ced6d6848484424242000000d6d6deffffffd6d6dece
+ced6d6dedeced6d6ced6dec6d6d6ced6dec6d6d6ced6deced6d6ced6deced6d6d6d6de7b84844a
+4a52ffffffffffffffffffffffff181029f7ffeffffff7dedee74a4a52fffffff7ffef525a4ace
+d6c6dedee7524a5af7efffffffff635a52d6cec6fffffff7ffffe7efffdeeff7424242ffffffff
+fff7424242c6d6d6d6ded6635a4affffefffffff525252d6d6d6ffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffced6d6ffffffced6d6d6d6dec6ced6d6
+dedec6d6d6ceded6c6d6d684849c0000109c9c94ced6c6d6d6e7cecededeefefc6d6ceb5b5b500
+000084848cdedee7ced6ded6dee7ced6dececed6c6ceced6d6d6dededeced6ced6dedeced6dece
+d6dec6d6ded6d6e7d6dee7c6cececed6d6d6ded6d6ded694948cb5b5adbdb5adbdadad524a425a
+4a4a524a4a5252524242424a4a525a4a5a4a394abdc6b500310018b55a21d66b42d673005a0842
+5231634a425a4a524a4252524a5a4a4a52394a4a314242394242293131000008d6d6ded6d6dece
+d6ded6dedebdcececed6deced6d6ced6dec6d6d6ced6deced6d6ced6deced6d6d6dede84848442
+4a4a000000ceced6ffffffced6d6ced6d6ced6d6ced6d6c6d6d6ced6dec6d6d6ced6d6ced6d6ce
+d6dececed6ced6d6ced6d684848c42424af7f7fffffffffffffff7efff312942e7efdefffff7c6
+c6ce52525affffffffffff737b63adb5a5adadb55a5263ffffffffffff6b6b63a5a59cfffffff7
+ffffe7ffffadbdd65a524affffefffffff63737badb5bdc6c6c6635242fffff7f7f7f76b7373ad
+a59cfffffffff7effffffffffffff7ffffffffffffffffffffffffffffffffffffffffffffffd6
+d6d6ffffffced6d6ced6ded6d6deced6deced6d6c6d6d6c6d6deb5bdd6181831636b5aefefe7ce
+c6ded6cee7bdcecec6d6ce5a5a52181010c6bdc6ceced6ced6dececed6b5bdc6081010adadadce
+d6ced6d6d6cecececed6d6cededec6ced6ced6dec6ced6ceced6d6d6ded6dedeced6d65a635aa5
+a5a5bdbdb5bdb5adbdadad5242425a4a4a524a4a4a42424242424a4a5252425a4a424aadc6ad00
+420018b55221de6b39d66b005a083952215a4a4252424a4a39524a39524a4252394a4a4a5a5239
+4242424a4a081010dee7efc6cecec6cececed6ded6e7e7c6d6d6ced6dec6d6d6ced6dec6d6d6ce
+d6deced6d6d6d6deced6d6848484424242000000d6d6deffffffd6dedeced6d6cededec6d6d6ce
+dedec6d6d6ced6dec6d6d6cededeced6d6ced6deced6d6d6d6de7b848442424affffffffffffff
+fffff7efff39314aeff7e7fffff79c9c9c84848cffffffffffffa5b59c848c7ba5a5ad8c8494ff
+ffffffffffb5b5ad848c84fffff7f7ffffd6f7ff7b94bda58473ffffe7ffffff7b9cad738484a5
+a59c94846bffffefffffff9ca5ad8c847bfffffffffffffffffff7fffff7ffffffffffffffffff
+ffffffffffffffffffffffffffffced6d6ffffffced6d6d6d6ded6ced6dededececed6cededebd
+d6dec6d6e7525a6b313129bdb5add6cedededeefceded6c6d6ce212118423939dededec6c6ced6
+d6ded6d6deb5b5bd212129a5adadcececedededecececed6ded6ced6d6c6d6d6ced6ded6d6e7ce
+ced6dedee7d6d6dec6cece000000b5b5b5a5a59cbdb5adbdb5ad5a4a4a524a4252525242424252
+525a42424a424252424a4a8cad8410631831d65a31e7634ae76b005a004263315a5242524a524a
+395252425a52394a5a4a4a5a52525a5a6342424a313139bdc6ceced6d6ced6deced6dec6ced6ce
+d6dec6d6d6ced6deced6d6ced6deced6d6d6d6deced6d6d6d6de848484424a4a000000ceced6ff
+ffffced6d6ced6d6ced6d6ced6d6c6d6d6ced6d6c6d6d6ced6deced6d6ced6dececed6ced6dece
+d6d67b848c393942fffffff7f7fffffffff7efff212131f7f7effffff7a5a5ad7b7b84ffffffff
+fff79ca58c848c7b9c9c9c847b8cffffffffffff949c947b8473fffff7eff7ffcef7ff7b94c6a5
+8473ffffe7efffff84a5b56b7b7ba5a594ad8c73ffffefffffff949ca58c7b73ffffffffffffff
+fffff7ffffefffffffffffffffffffffffffffffffffffffffffffffffced6d6f7ffffced6d6d6
+d6d6d6ced6ded6deced6d6c6d6d6bdd6deb5cede9cadb500000008080810081000000800000000
+0800000000b5adadcececed6d6dec6ced6dedee7a5a5ad101818a5a5a5d6d6d6deded6ced6cece
+d6d6ced6d6bdcececed6dec6ced6dedee7bdbdc6ced6d6d6d6d65252529c9c94bdb5b5b5ada5c6
+bdb5524242524a4a4a4242525252525a5a394242183929215a39398c4a08842129de5a21ef6331
+e763006300317b394a734a425a5242525a4a4a525242525a424a6b525a5a525a52525a293131de
+dee7ced6d6ced6dec6ced6cededec6d6d6ced6dec6d6d6ced6deced6d6ced6dececed6ced6d6ce
+d6d6848484424242000000d6d6deffffffd6d6dececed6d6dedeced6d6ced6dec6d6d6ced6dec6
+d6d6ced6deced6d6ced6deced6d6d6d6de7b848442424af7f7ffffffffffffffffffff312939e7
+efe7fffff79c9ca58c8c94ffffffffffff9ca5947b8473adadad7b7384fffffffff7f79ca59c7b
+847bfffffff7ffffcef7ff7394c6a58c73ffffe7efffff84a5b5738484ada594a58c73fffff7ff
+ffff94a5a5a5948cffffeffffffffffffff7fffff7fffffffffffffff7ffffffffffffffffffff
+ffffffffffced6d6ffffffc6d6d6d6d6ded6ced6e7dedececed6c6d6debdd6dec6dedebdced618
+18294a424ad6d6d6d6d6d6c6d6d6394242312929ded6d6dedede9c949c00000800000808081000
+00000000000000000810087b847bdee7e7c6d6d6c6d6d6ced6ded6d6e7d6d6dececed6d6d6ded6
+dedeced6ceadadadadada5bdb5adbdadad5a4a4a5242424a4a4a5252526b73737ba5945ab58c52
+ce8c39ce7329d66b10ef6b10f76b18f76b39ef7b5ae7846bd6945ab58c7bc6ad294a4a424a525a
+4a5a5239525a526352525a393942d6d6dec6ced6ced6dec6cececed6deced6deced6d6ced6dec6
+d6d6ced6deced6d6ced6deced6d6d6dede848484424a4a000000ceced6ffffffced6d6ced6d6ce
+d6d6ced6d6c6d6d6ced6dec6d6d6ced6d6ced6d6ced6dececed6ced6d6ced6d684848c42424aff
+fffffffffffff7ffefefff212131f7ffeffffff7ceced642424af7f7f7ffffff6b7363adb5a5c6
+c6ce5a5263f7eff7ffffff73736badb5a5ffffeff7ffffd6f7ffa5bde76b5242ffffeff7ffff5a
+7384949ca5cecebd6b5242fffff7ffffff636b6bada59cfffffffffffffffffff7ffffeffffff7
+fff7fffffffffffffffffffffffff7f7ffeff7f7ced6d6f7ffffced6d6d6d6d6ded6d6ded6dece
+cedec6d6debdd6debddecebdd6ce737b8c100821c6c6c6deded6adb5b5101821847b84cecec6ce
+cecededee7ceced6e7e7efadadb5101018a5adadd6d6d6c6cec6d6ded6dededec6cecec6d6d6ce
+d6dec6ced6d6d6deced6ded6d6debdc6c6dedede9c9c9cada5a5b5ada5c6b5ad5242425a4a4a52
+4a4a4a4a4a2121294a735a52b57b18ad5a31de7318de6b08f77300ef6308ef6b21ef7331d67342
+c67b319c6b63b594214a4239424a4231424229423129394a5252212929c6c6ceced6ded6deded6
+dedec6ced6c6d6d6ced6dec6d6d6ced6dec6d6d6ced6deced6d6d6d6deced6d684848442424200
+0000d6d6deffffffd6dedeced6d6cededec6d6d6cededec6d6d6ced6dec6d6d6cededeced6d6ce
+d6deced6d6d6d6de7b8484393942ffffffffffff4a4a52000018080018eff7e7fffff7dedee752
+525afffffff7ffef5a634aced6c6e7e7ef4a4252fff7ffffffff5a524acecec6fffffff7ffffde
+f7ffdee7ff524a42ffffeff7ffff394a52d6dee7e7e7e7635239ffffefffffff5a6363d6ceceff
+fffffffffffffffffffffff7ffffffffffffffffffffffffffffffffffffffffffffffd6dedeff
+ffffc6d6d6d6deded6d6d6dededececed6ced6e7c6d6debdd6c6cee7debdc6d60000108c948cce
+cec684848c080810cececed6d6d6e7dee7ced6d6ceced6ced6debdc6ce1010189ca5a5dededede
+e7dec6cececececec6ced6d6e7e7c6ced6ced6dec6ced6ced6dededee7ced6d6dee7de949494bd
+bdb5bdb5adb5a5a5a594945242424a42425a525273737b315242105a21299c4a18ad5229e77308
+e76308f77321f77321d66b42c66b218442105229426b524a5a52524a5a4a314229102139313939
+4242313139e7e7efbdc6ceced6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6deced6d6d6
+d6deced6d6d6d6de848484424a4a000000ceced6ffffffced6d6ced6d6ced6d6ced6d6c6d6d6ce
+d6d6c6d6d6ced6deced6d6ced6dececed6ced6deced6d67b848c424a4afffffff7f7f7ffffffff
+f7ff292939dee7d6ffffefffffff63636b0000000008004a5242ffffffffffff6b6b7b00000008
+08085a524afffffffffffff7ffffefffffeff7ff7b7b730800000000005a5a5aeff7ffffffff84
+7b6b1008000000004a4a4afffffffffffffff7f7fffffffffffffffffffffff7fffffffff7f7ff
+ffffffffffffffffffffffbdc6c6f7ffffced6d6ced6d6d6d6d6d6d6dececedececedec6d6debd
+d6cec6dedeb5c6d6424a5a394239cedece42394242424ad6d6d6cececececed6ced6ded6dee7ce
+d6dea5adb5101821a5adadcececececececed6d6d6deded6e7e7d6dee7c6d6dec6ced6e7efefbd
+c6cec6c6ced6dedec6c6c663635aa5a59cbdada5c6b5b5bdadad5a4a4a5a4a4a42393952525a5a
+635a214a2129733939b56308b54a00ce5a18ef7310d65a31c663187b39296339394a395252524a
+4242392931312129392931181818313139000008c6ced6dee7e7c6ced6bdceced6dee7c6d6d6ce
+d6dec6d6d6ced6deced6d6ced6dececed6ced6d6ced6d6848484424242000000d6d6deffffffd6
+d6dececed6d6dedeced6d6ced6dec6d6d6ced6dec6d6d6ced6deced6d6ced6deced6d6d6d6de7b
+8484424242fffffffffffffffffffff7fffffffffffff7fffff7ffffffffffffffffffffffffff
+fffffffffffffffffffffffffffff7f7f7fffffffffff7fffffffffffffffffffffffff7ffffff
+fffffffffffffffffffffffffffffffffffff7efffffffffffffffffffffffffffffffffffffff
+f7efffffffffffffffffffffffffffffffffffffffffffffffffd6dedeffffffced6d6d6dedece
+d6d6d6dedececed6d6d6deced6d6d6efe7adbdbdc6d6de9cadb5001010949c94101010a59c9cd6
+d6d6d6deded6dedeced6dec6d6dec6ced6dee7efbdc6ced6deded6deded6d6d6d6d6d6d6d6debd
+c6cec6ced6c6ceded6d6e7bdc6ced6dee7dee7e7c6ceced6ded6efefe7a59c9cb5ada5c6b5adbd
+adad948c8c63525a4239393931395a5a5a6b6363183921004a10109c4a21ce6310bd5229c66300
+631839734a4a524a63525a5a42525a4252312931212118101810293131292931ceced6ced6d6ce
+ced6c6cecedee7e7c6cececed6deced6d6ced6dec6d6d6ced6deced6d6ced6deced6d6d6dede84
+8484424a4a000000ceced6ffffffced6d6ced6d6ced6d6ced6d6c6d6d6ced6dec6d6d6ced6d6ce
+d6d6ced6dececed6ced6d6ced6d684848c424242fffffffffffffffffffff7fffffffff7ffefff
+fff7fffffffff7fff7f7f7fffffffffff7fffffffffffff7f7fff7f7fffffffffffffffffffff7
+eff7f7f7fffffffffffffffffffffffffff7efeffffffffffffffffffff7f7f7ffffffffffffff
+fffff7fffff7fffff7fffffffffffffffffff7effffffffffffffffffffffffff7fff7ffffffff
+ffffceced6ffffffced6d6ced6d6ced6d6ced6deced6d6ced6d6ced6deced6debdd6d6bdd6d6bd
+dede000008000000292121decececececed6dedec6c6ceced6deced6e7c6cedec6d6ded6dee7ce
+ced6ced6d6ced6d6d6d6d6ceced6ced6deced6e7d6deefc6ceded6dee7c6d6dec6d6d6ced6d6c6
+cec6cececeada5a5b5ada5b5ada5c6b5b5c6b5b57b6b735a525a524a524a424a634a525a525200
+3118005218188c4231a55a005a10427b524252394a4242634a5252394a39293921212118211821
+2921212121000008d6d6dededee7ceced6ced6dec6ced6cededec6d6d6ced6dec6d6d6ced6dec6
+d6d6ced6deced6d6d6d6deced6d6848484424242000000d6d6deffffffd6dedeced6d6cededec6
+d6d6cededec6d6d6ced6dec6d6d6cededeced6d6ced6deced6d6d6d6de7b8484424242ffffffff
+fffffffffff7effffff7fffffffffffff7fffffffff7fffffffffffffffffff7ffffffffffffff
+fffffffffffffffffff7f7fffffffffffffffffffffffff7ffffffffffffffffffffffffffffff
+fffffffffffffffff7fffffffffffffffff7ffffeffffff7fffffffff7ffffffffffffffffffff
+fffffffffff7fffffffffffffffff7eff7dedee7ffffffced6d6cededec6d6d6cededececed6d6
+deded6d6d6c6ceded6e7efbdded6bdded6425a6300081894848cded6d6ded6d6ced6deced6dece
+d6decedee7bdced6c6d6dec6ced6d6d6dececed6d6dedeced6d6d6d6deced6deced6debdc6cece
+d6e7c6d6d6c6d6d6cedededee7e7ced6cededed6ded6d6a59c94bdada5bdadadb5a59ccebdbd6b
+636b525252524a5252424a524a524a5a5a083121002108001800526352525a4a5a5a5239313152
+4a52524a5252525a393942292929211821181818d6d6dededee7c6ceced6dedec6ced6d6dee7c6
+ced6ced6dec6d6d6ced6deced6d6ced6deced6d6d6d6deced6d6d6d6de848484424a4a000000ce
+ced6ffffffced6d6ced6d6ced6d6ced6d6ced6d6ced6d6ced6d6ced6deced6d6ced6dececed6ce
+d6deced6d67b8484393939424a4239424242424a42425242424a313931424a393939424a4a5a39
+3939313931525a4a39393931314242424a424a4a3139314a4a4a524a52312921524a4239424231
+42393139314a524a393939393939524a4a423939394a4a3942424a42424a4a4a29394221393931
+42424a4a424a39315a4a42424242393942314242394242424a423939394a4a52d6d6deffffffd6
+d6d6ced6d6c6d6deced6deced6d6ced6d6d6d6d6cecee7c6cedebddecec6e7d6bdcedececee7de
+ced6ded6d6d6ced6ced6d6ced6dec6ced6c6ced6bdced6ced6e7ced6deced6d6ced6d6d6d6ded6
+dedececed6ced6dec6d6ded6dee7c6ced6ced6deced6deced6d6bdceced6dedec6cecededed64a
+4242ada59cbdadadbdadadbdadadc6bdbda59c9c524a4a4a394263525a393942525a5a9c9494a5
+9c945a4a425242424a42395a52529c9494adadad6b73733139391010182121299c9c9cd6d6dece
+ced6d6d6deced6deced6dec6cececededeced6d6ced6dec6d6d6ced6deced6d6ced6dececed6ce
+d6d6ced6d6848484424242000000ced6deffffffd6d6dececed6d6dedeced6d6d6d6deced6d6ce
+d6ded6deded6dedec6ceced6d6ded6dedebdc6c68c949484848c7b84848484847b848484848c7b
+84848484847b847b84848c7b84848484847b8484848c847b848484848c7b848484848c7b848484
+84848484848484848484848484847b8484848c847b84848484848484848484848484847b84847b
+84848484848484847b848c738484848c8c7b84848c848484848484848c7b84847b848c7b848484
+8c847b848484848c7b8484f7f7ffdedee7ced6dec6ced6d6dee7ced6ded6d6dececed6d6d6dece
+d6deced6dec6d6d6ced6deced6ded6d6ded6d6d6d6d6deced6d6ced6deced6deced6deced6dece
+d6deced6ded6d6deced6d6d6d6deced6d6d6d6deced6deced6deced6deced6deced6deced6dec6
+d6deced6deced6d6ced6d6ced6d6dedede6b6b639c9c9cb5adadbdb5adada59cbdb5adb5ada5a5
+94946b635a4a42394a42395a524a524a425a4a4263524aa5948cbdb5adb5ada5b5b5b58c8c8c29
+2929212129081010d6d6deced6deced6deced6ded6d6deced6deced6deced6ded6d6deced6dece
+d6deced6ded6d6deced6deced6deced6d6d6dede848484424a4a000000ceced6ffffffced6d6ce
+d6d6ced6d6ced6d6ced6d6ced6dececed6ced6dec6ced6ceced6ced6d6d6dee7ced6d6bdc6cece
+d6d6ced6d6ced6d6d6d6d6ced6d6ced6d6ced6d6d6d6d6ced6d6ced6d6ced6d6d6d6d6ced6d6ce
+d6d6ced6d6d6d6d6ced6d6ced6d6ced6d6d6d6d6ced6d6ced6d6ced6d6d6d6d6ced6d6ced6d6ce
+d6d6d6d6d6ced6d6ced6d6ced6d6d6d6d6ced6d6ced6d6ced6d6d6d6d6ced6d6ced6d6ced6d6d6
+d6d6ced6d6ced6d6ced6d6d6d6d6ced6d6ced6d6ced6d6ced6ded6dee7ced6dec6ced6ced6dece
+d6d6ced6dececed6d6d6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ce
+d6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6dece
+d6d6ced6dec6ced6ced6dec6cedeced6dec6ced6ced6dec6d6d6ced6d6bdc6c6dee7e75a635aa5
+a59cada59ccec6bdbdb5adb5ada5bdb5a5b5ada5b5ad9cbdb5adbdb5a5bdada5b5a59cbdada5bd
+adadbdb5b5b5adada59c9c6b6b6b424242000808ced6d6ceced6ced6deced6d6ced6dececed6ce
+d6deced6d6ced6dececed6ced6deced6d6ced6dececed6ced6deced6d6d6d6deced6d684848442
+4242000000ced6deffffffd6dedeced6d6cededec6d6d6cededeced6d6d6dedec6d6d6ced6d6ce
+d6d6ced6dec6d6d6d6deded6dee7ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6ced6dec6ced6ced6deced6deced6dec6ced6ced6deced6deced6deced6deced6deced6dece
+d6deced6deced6deced6deced6deced6deced6deced6deced6deced6deced6deced6deced6dece
+d6deced6deced6deced6deced6deced6deced6deced6deced6deced6deced6deced6dec6d6d6ce
+dedeced6d6d6ded6c6cec6e7e7e763635aa59c9c9c948cbdb5adbdb5adadada5b5b5a5c6bdb5bd
+b5adbdb5adbdadadc6b5adbdadadbdadadb5a5a5b5adadbdb5bd6363639c9c9ce7efefced6d6ce
+d6deced6deced6deced6deced6deced6deced6deced6deced6deced6deced6deced6deced6dece
+d6deced6deced6d6d6d6de848484424a4a000000c6d6d6ffffffced6d6ced6d6ced6d6ced6d6ce
+d6d6ced6d6ced6deced6deced6d6d6dedeced6d6c6ced6bdcececed6deced6d6d6d6deced6d6ce
+d6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6dece
+d6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6
+d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6d6dece
+d6d6ced6deced6d6d6d6deced6d6ced6deced6d6ced6deced6deced6deced6deced6d6c6ced6ce
+d6deced6d6ced6dec6ced6ced6deced6d6ced6dec6ced6ced6deced6d6ced6dec6ced6ced6dece
+d6d6ced6dec6ced6ced6deced6d6ced6dec6ced6ced6deced6d6ced6dec6ced6ced6dececedece
+d6dec6ced6ced6dec6d6d6ced6dec6d6d6ced6d6d6dedeced6d6ced6d6cececedededeb5b5b58c
+8c84adada5b5b5adbdb5adadada5adada5ada5a5bdb5adbdadadb5ada5b5ada5bdb5b59c949473
+7373bdbdbdd6dedebdc6c6cededeced6d6ced6dec6ced6ced6deced6d6ced6dec6ced6ced6dece
+d6d6ced6dec6ced6ced6deced6d6ced6dec6ced6ced6deced6d6848484424242000000ced6def7
+ffffcededec6d6d6cededec6d6d6ced6dec6d6d6c6d6d6c6d6d6cededeced6decededeced6dece
+d6dec6d6d6ced6dec6d6d6ced6d6c6ced6ced6dec6d6d6ced6d6c6ced6ced6dec6d6d6ced6d6c6
+ced6ced6dec6d6d6ced6d6c6ced6ced6dec6d6d6ced6d6c6ced6ced6dec6d6d6ced6d6c6ced6ce
+d6dec6d6d6ced6d6c6ced6ced6dec6d6d6ced6d6c6ced6ced6dec6d6d6ced6d6c6ced6ced6dec6
+d6d6ced6d6c6ced6ced6dec6d6d6ced6d6c6ced6ced6dec6d6d6ced6d6c6ced6d6dedeced6dece
+d6deced6d6cededec6d6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6
+d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ce
+d6deced6d6ced6deced6d6ced6deced6deced6deced6deced6deced6d6ced6dec6d6d6c6cecece
+d6d6d6deded6d6d6d6d6d6c6c6c6dedede636b63a5a5a59c9c9ca5a59ca5a59cb5adadadada5ad
+a5a5a59c9cada5a54a4242cececed6d6d6dee7e7ced6deced6d6ced6deced6deced6d6ced6dec6
+d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6deced6d6d6
+dede848484424a4a000000c6ced6ffffffced6d6ced6d6c6d6d6c6d6d6c6d6d6ced6dec6ced6ce
+d6dec6d6d6c6d6d6c6ced6cededeced6deced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6dec6d6d6ced6d6c6ced6c6d6d6c6ced6ced6dec6d6d6ced6dec6d6d6ced6dec6
+d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ce
+d6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dececed6ced6deced6d6ced6dec6
+d6d6ced6dec6d6d6ced6ded6dedecededed6dee7bdc6c6d6deded6d6debdc6c6dedee7cececece
+d6ceced6ced6deded6d6d6d6ceced6ceceded6d6cec6c6d6d6d6dededeced6d6ced6d6bdc6cece
+d6deced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ce
+d6dec6d6d6ced6dec6d6d6ced6deced6d6848484424242000000ced6def7ffffcededec6d6d6ce
+dedec6d6d6cededec6d6d6cededeced6deced6dec6ced6c6d6d6c6d6d6ced6dec6d6d6ced6dec6
+d6d6ced6dec6d6deced6dec6d6d6ced6dec6d6deced6dec6d6d6ced6dec6d6deced6dec6d6d6ce
+d6dec6d6deced6dec6d6d6ced6dec6d6deced6dec6d6d6ced6dec6d6deced6dec6d6d6ced6dec6
+d6deced6dec6d6d6ced6dec6d6deced6dec6d6d6ced6dec6d6deced6dec6d6d6ced6dec6d6dece
+d6dec6d6d6ced6dec6d6deced6dec6d6d6ced6dec6d6deced6dec6d6d6ced6dec6d6d6ced6dec6
+d6d6ced6dec6d6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ce
+d6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6dece
+d6d6ced6deced6d6d6d6deced6d6ced6deced6d6ced6deced6d6ced6debdcececed6debdc6ced6
+dedeced6d6dedee7c6ceced6deded6ded6d6dedeced6d6d6d6d6cececed6d6d6d6deded6dedece
+d6d6d6dedeced6d6ced6d6d6dee7cedee7bdc6ceced6dec6d6d6ced6deced6d6ced6dec6d6d6ce
+d6deced6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6d6d6d6de848484424a4a00
+0000c6d6d6ffffffc6d6d6c6d6d6ced6d6ced6d6c6d6d6ced6d6ced6deced6dec6d6d6ced6dece
+d6d6ced6dec6d6d6ced6dec6d6deced6dec6d6d6ced6dec6d6deced6dec6d6d6ced6dec6d6dece
+d6dec6d6d6ced6dec6d6deced6dec6d6d6ced6dec6d6deced6dec6d6d6ced6dec6d6deced6dec6
+d6d6ced6dec6d6deced6dec6d6d6ced6dec6d6deced6dec6d6d6ced6dec6d6deced6dec6d6d6ce
+d6dec6d6deced6dec6d6d6ced6dec6d6deced6dec6d6d6ced6dec6d6deced6dec6d6d6ced6dec6
+d6d6ced6deced6d6ced6dec6d6d6ced6dec6ced6c6d6d6c6d6d6ced6dec6d6d6ced6dec6d6d6ce
+d6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6
+d6d6ced6dec6d6d6ced6dec6d6d6ced6deced6d6ced6dececed6ced6deced6d6ced6dec6d6d6ce
+d6deced6deced6dec6ced6d6dee7bdced6ced6dec6d6deced6dec6d6d6ced6d6ced6d6ced6d6ce
+d6d6d6dedeced6d6ced6d6ced6d6ced6d6c6ced6ced6dec6ced6c6d6d6c6d6deced6dec6d6d6ce
+d6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6d6d6ced6dec6
+d6d6ced6d6ced6d6848484424242000000ced6d6f7ffffced6dec6ced6cededec6d6d6d6dee7c6
+d6d6ced6dec6d6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ced6deced6deced6deced6dece
+dedeced6deced6deced6deced6dec6d6deced6dec6d6d6ced6deced6deced6dec6d6deced6dec6
+d6deced6dec6d6deced6deced6deced6deced6deced6dec6d6deced6dec6d6deced6deced6dece
+d6deced6deced6deced6deced6dec6d6deced6deced6deced6deced6deced6dec6d6deced6dec6
+d6d6ced6deced6deced6dec6d6deced6dec6d6d6ced6dec6d6d6ced6deced6d6ced6dec6d6d6ce
+d6dec6d6d6ced6dec6d6d6cededeced6d6ced6dec6d6d6cededeced6d6ced6deced6d6cededece
+d6d6cededeced6d6ced6dec6d6d6ced6dec6d6d6cededeced6d6cededeced6d6d6dedeced6ded6
+dedeced6d6d6dedeced6ded6d6deced6deced6deced6deced6dec6d6deced6dec6d6deced6dec6
+d6decededeced6d6ced6deced6d6ced6deced6d6ced6deced6d6d6d6deced6d6ced6dec6d6dece
+d6dec6d6deced6dec6d6deced6deced6d6ced6dec6d6d6cededeced6d6ced6dec6d6d6cededece
+d6d6ced6dec6d6d6cededeced6d6ced6deced6d6d6dede848484424a4a000000ced6d6ffffffc6
+d6d6ced6dec6ced6c6d6d6c6d6d6c6d6d6c6ced6ced6d6c6d6d6ced6dec6ced6ced6d6c6d6d6ce
+d6dec6ced6c6d6dec6ced6ced6dec6ced6ced6dec6ced6ced6dec6d6d6ced6dec6d6deced6dec6
+d6d6ced6dec6d6deced6dec6d6d6ced6dec6d6deced6dec6d6deced6deced6deced6dec6ced6ce
+d6dec6d6d6ced6dec6ced6ced6dec6d6d6ced6dec6ced6ced6dec6d6d6ced6dec6ced6ced6dec6
+d6deced6dec6ced6ced6dec6d6d6ced6dec6ced6ced6dec6d6d6ced6dec6d6d6ced6deced6d6ce
+dedeced6d6ced6deced6d6cededeced6d6ced6deced6d6cededeced6d6ced6deced6d6cededec6
+ced6ced6d6ced6d6ced6dec6d6d6ced6d6ced6d6ced6dec6ced6c6d6d6c6ced6c6d6d6c6ced6c6
+d6d6c6ced6ced6d6c6ced6ced6d6ceced6ced6d6c6ced6ced6d6ceced6ced6d6c6ced6ced6dec6
+ced6ced6dec6ced6c6d6dec6ced6c6d6dec6ced6c6d6d6c6d6d6ced6d6c6ced6ced6d6c6ced6ce
+d6d6c6ced6ced6d6c6ced6ced6dec6ced6c6d6dec6ced6c6d6d6c6ced6c6d6d6c6ced6ced6d6c6
+ced6c6d6d6c6ced6ced6d6c6ced6c6d6d6c6ced6ced6d6c6ced6c6d6d6c6ced6ced6d6ced6d684
+8484424242000000ced6d6f7ffffceced6ced6deced6ded6deded6d6deced6ded6d6deced6ded6
+dedeced6ded6d6deced6ded6dedeced6ded6dedeced6ded6dedeced6ded6dedeced6ded6dedece
+d6deced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6dece
+d6d6cededeced6deced6deced6d6ced6deced6d6ced6deced6d6cededeced6d6ced6deced6d6ce
+d6deced6d6ced6d6c6ced6ced6d6c6d6d6ced6d6c6ced6ced6d6c6d6d6ced6d6c6d6d6ced6d6c6
+d6d6ced6d6c6ced6ced6d6c6d6d6d6dedeced6d6d6dedeced6ded6dedeced6d6d6dedeced6ded6
+dedeced6ded6dedeced6ded6dedeced6d6d6dedeced6ded6dedeced6ded6dedeced6ded6deded6
+d6ded6deded6d6ded6dedeced6ded6dedeced6decededeced6decedee7ced6ded6dedeced6ded6
+dedeced6ded6dedeced6ded6dedeced6ded6dedeced6ded6dedeced6decededeced6decededece
+d6ded6dedeced6ded6dedeced6ded6dedeced6ded6dedeced6ded6dedeced6ded6dedeced6ded6
+dedeced6ded6dedeced6d6d6d6de848484424a4a000000ced6deffffffceced6d6dedececed6d6
+dee7c6c6ceced6d6ceced6ced6d6c6ced6ced6d6c6ced6ced6d6c6ced6ced6d6ceced6ced6dec6
+ced6ced6d6c6d6d6ced6dec6ced6ced6d6ced6d6ced6dec6d6d6ced6deced6d6ced6dec6ced6ce
+d6d6ced6d6ced6dec6d6d6ced6deced6d6ced6dec6ced6ced6d6ced6d6ced6deced6d6ced6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6dec6d6d6ced6deced6d6ced6dec6d6d6ced6d6ced6ded6dedeced6d6d6d6deced6d6d6dedece
+d6d6d6d6deced6d6d6dedeced6d6ced6deced6d6d6d6deced6d6ced6dececed6ced6d6c6ced6ce
+d6d6c6ced6ced6d6c6ced6ced6d6ced6d6ced6d6ceced6ced6d6ceced6ced6d6c6ced6ced6d6c6
+ced6ced6d6c6ced6ced6d6ceced6ced6d6ceced6ced6d6ceced6ced6d6ceced6ced6d6c6ced6ce
+d6d6c6ced6ced6d6c6ced6ced6d6c6ced6ced6d6c6ced6ced6d6c6ced6ced6d6c6ced6ced6d6c6
+ced6ced6d6c6ced6ced6d6c6ced6ced6d6ceced6ced6d6c6ced6ced6d6ceced6ced6d6c6ced6ce
+d6d6ceced6ced6d6c6ced6ced6d6ceced6ced6d6c6ced6ced6d6ced6d6848484424242000000ce
+d6d6f7ffffd6d6dececed6ced6d6d6dedeced6d6ced6ded6deded6d6ded6d6deced6ded6deded6
+d6ded6d6deced6ded6d6deced6d6ced6deced6d6d6d6deced6d6ced6deced6d6d6dedeced6ded6
+dedeced6d6d6dedeced6d6d6d6deced6d6d6dedeced6d6d6d6deced6d6d6dedeced6d6d6d6dece
+d6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6d6ced6d6ced6deced6d6ced6d6ced6d6d6d6dece
+d6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6ced6d6ced6d6d6d6d6ced6d6ce
+d6d6ced6d6d6deded6d6d6d6deded6d6d6d6deded6d6d6d6deded6d6d6d6dedeced6d6d6d6dece
+d6d6d6dedeced6d6d6d6deced6d6cededeced6d6d6d6deced6d6d6deded6d6d6d6d6deced6d6d6
+deded6d6d6d6d6deced6d6d6dedeced6d6d6dedeced6d6d6dedeced6ded6d6deced6d6d6d6dece
+d6deced6deced6d6d6dedeced6d6d6d6deced6d6d6dedeced6d6d6d6deced6d6d6dedeced6d6d6
+d6deced6d6d6dedeced6d6d6d6deced6d6d6dedeced6d6d6d6deced6d6d6dedeced6d6d6d6dece
+d6d6d6dede848484424a4a000000d6d6deffffffdee7e7c6cecec6c6ced6d6dececed6d6d6dece
+ced6ced6d6ceced6d6d6dececed6ced6deced6d6d6d6dececed6ced6d6ced6d6ced6deced6d6ce
+d6deced6d6ced6dec6ced6ced6d6ceced6ced6d6ceced6ced6d6ced6d6ced6dececed6ced6d6ce
+d6d6ced6deced6d6ced6deced6d6ced6dececed6ced6d6ced6d6ced6deced6d6ced6deced6d6ce
+d6deced6d6ced6deced6d6ced6deced6d6ced6deced6d6d6dedeced6d6ced6deced6d6d6d6dece
+d6d6d6d6deced6d6d6dedeced6d6ced6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6deced6d6ce
+d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6dececececed6d6ceced6ced6d6cecececed6d6ce
+d6d6ced6d6cecececed6d6ceced6ced6d6ceced6ced6d6ced6d6d6d6d6ced6d6ced6deced6d6ce
+d6deced6d6d6d6d6d6d6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6ced6d6ced6d6ced6d6ce
+d6d6ced6deced6d6ced6dececed6ced6deced6d6ced6deced6d6ced6d6ced6d6ced6deced6d6ce
+d6d6ced6d6d6d6deced6d6ced6d6ced6d6d6d6d6ced6d6ced6d6ced6d6d6d6d6ced6d6ced6d6ce
+d6d6d6d6d6ced6d6ced6d6ced6d6d6d6d6ced6d6848484424242000000d6d6def7f7ffd6d6d684
+8c8c84848c84848c84848c7b848484848c84848c8c8c8c84848c8c8c8c84848c8c8c94848c8c8c
+8c94848c8c8c9494848c8c8c94948c8c8c8c94948c8c949494948c949494949c8c949494949c8c
+9494949c9c949494949c9c949494949c9c949c9c949c9c949c9c9c9c9c949c9c9c9c9c949c9c9c
+9ca5949c9c9ca5a59c9c9c9ca5a59c9ca59ca5a59c9c9c9ca5a59ca5a5a5a5a59ca5a5a5a5ad9c
+a5a5a5a5a59ca5a5a5adad9ca5a5a5adada5a5a5a5adada5a5adadadb5a5adadadb5b5adadadb5
+b5b5adadb5b5b5b5adb5b5b5b5b5adadadb5b5b5adb5b5b5b5b5adb5b5b5b5bdb5b5b5bdbdbdb5
+b5b5bdbdbdb5bdbdbdbdbdb5bdbdbdbdc6b5bdbdbdbdc6b5bdbdbdc6c6bdbdbdbdc6c6bdbdbdc6
+c6c6bdc6c6bdc6cebdc6c6bdc6cebdc6c6c6c6c6bdc6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6
+c6c6c6c6c6bdc6c6c6cec6bdc6c6c6c6cebdc6c6c6c6cebdc6c6c6c6cebdc6c6bdc6cebdc6c6c6
+c6cebdc6c6c6c6cebdc6c6c6c6c6bdc6c6c6c6c6bdc6c6c6c6c6bdc6c6c6c6c6bdc6c6c6c6c6bd
+c6c6c6c6c6bdc6c6c6c6c6bdc6c6c6c6c6bdc6c6c6c6c6bdc6c6c6c6c6c6c6c6d6d6d684848442
+4a4a000000dededeffffffd6d6de8484847b7b8484848484848c84848c84848c848c8c84848c8c
+8c8c84848c8c8c9484848c8c8c94848c8c8c8c8c848c8c8c8c948c8c8c8c94948c8c8c8c949484
+8c8c8c94948c8c8c8c94948c94948c94948c94949494948c9494949c9c949494949c9c94949c9c
+9c9c949c9c9c9c9c94949c949c9c949c9c9c9c9c949c9c9ca5a59c9c9c9ca5a59c9c9c9ca5a59c
+9ca59ca5a59ca5a5a5a5ad9ca5a5a5adada5a5a5a5adada5a5a5a5adada5adadadadada5adadad
+adada5adadadadada5adadadadadadadadadb5b5adadadadb5b5adadadadb5b5adadadb5b5b5ad
+b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5bdbdb5b5b5b5bdbdb5b5bdbdbdbdb5bdbdbdbdbdb5bdbdbd
+bdbdb5bdbdbdbdbdbdbdbdbdc6c6bdbdbdbdc6c6bdc6c6bdc6c6bdbdc6bdc6c6bdc6c6c6c6c6bd
+bdc6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6bdc6c6c6c6c6bdc6c6c6c6cebdc6c6c6
+c6cebdc6c6c6c6cebdc6c6c6c6cebdc6c6c6c6cebdc6c6c6c6cebdc6c6c6c6c6bdc6c6c6c6c6c6
+c6c6c6c6c6bdc6c6c6c6c6c6c6c6c6c6c6bdc6c6c6c6c6c6c6c6c6c6c6bdc6c6c6c6c6c6c6c6c6
+c6c6bdc6c6c6c6c6d6d6d6848484424242000000d6d6deffffffd6d6de7b84848c8c947b7b7b7b
+7b7b848c8c8c8c8c848484848c8c8c8c8c8c8c948c8c8c8c8c948484849494948c8c8c8c8c8c8c
+8c8c8c8c8c9c9c9c8c8c8c949494949c9c8c8c8c949c9c949c9c8c9494848c94949c9c8c949494
+9494949c9ca5a5a5949c9c94949c9c9c9ca5a5a59494949c9c9ca5adad949c9c8c9494a5a5ad9c
+9c9c9ca5a5a5a5a5a5adad9ca5a5a5a5a59ca5a5a5a5ada5a5a5a5a5ad9ca5a5a5a5a5adadada5
+adad9c9c9ca5adadadadadadadada5adadb5b5b59ca5a5adb5b5adadadadb5b5b5b5b5b5b5b5ad
+adb5adb5b5b5b5b5b5b5b5adadadb5bdbdb5b5b5adb5b5adb5b5b5bdbdb5b5b5b5bdbdb5b5b5bd
+bdbdbdbdc6bdc6c6b5b5bdbdc6c6bdbdbdb5bdbdb5bdbdc6c6c6bdc6c6bdbdbdbdbdbdbdc6cebd
+bdc6bdc6cebdc6c6c6cece3139394a4a5231393942424a39393942424a39424242424a424a4a42
+424239393939424242424242424a424242424a4a39424239393942424239394242424239424242
+4a4a424242424242393939cececececece3939394a4a4a4242424a4a4a3139394a4a4a42424a42
+42423939424a4a4a394242424242394242bdbdbdcececed6dede848484424a4a000000ced6d6ff
+ffffced6d67b84847b7b7b848484949c9cb5bdbdcecececececed6d6ded6d6d69494948c8c8cbd
+c6c6d6d6d68c8c8c8c8c8c8c8c8ccececececececececed6d6d6c6c6c6949c9c949c9cadb5b5ce
+d6d6c6ced6d6dedec6d6d6adb5b58c9494a5a5adbdbdbdd6d6d6d6d6d6ced6d6b5b5bdadadad94
+94949c9c9c8c9494b5b5b5ceced6d6d6d6cecececececeb5bdbdb5b5b5b5bdbdced6d6cececece
+ced6c6c6cebdc6c6b5b5bdd6d6d6c6c6c6adadadb5b5b5ced6d6ced6d6d6d6d6bdc6c6bdbdbdce
+ced6d6d6d6c6c6c6ced6d6c6cecebdc6c6bdbdbdced6d6c6c6c6bdc6c6c6ceced6d6d6ced6d6de
+dedecececebdc6c6b5bdbdc6c6cececececed6d6c6c6c6bdc6c6bdc6c6ced6d6d6d6ded6d6dec6
+c6c6bdbdbdbdc6c6dededed6d6debdc6c6a5adadceced6bdc6c6efeff7848c8c84848c7b84847b
+848484848c7b7b7b84848c7373737b848484848c7b7b7b424242ffffff7373738c848c84848494
+94948c8c8c84848484848c7b7b7b8c8c8c8484847b7b7b4a424abdbdbdc6c6ceffffff7b848484
+8c8c737b7b949494636b6b7b84847b8484848c8c6b73737b848473737b424a4aceced6bdb5bdce
+d6d6848484424242000000d6dedeffffffd6dede7b84847b84848c8c94bdc6c6ced6d6a5adad8c
+9494adadadced6d6a5a5ad9c9c9ce7e7e7cecece8c8c8c949494bdbdbde7e7e7bdbdbd848484ce
+cecededede9ca5a5adadb5ced6d6bdc6c6949ca5adb5b5ced6d6adb5b5a5a5a5d6d6d6d6d6d69c
+9c9c949494a5a5a5a5a5a58c8c8c9ca5a5949c9ca5adadc6c6cecececeadadb5adb5b5adadad9c
+a5a5b5bdbdd6dedec6c6ceb5b5b5c6c6c6d6d6d6adadb5adadadced6d6ced6d6bdbdbdcececec6
+c6c6adb5b5a5adadc6c6c6b5b5bdd6d6decececeb5bdbdc6ceced6d6d6bdc6c6bdbdbdd6d6d6ce
+d6d6bdc6c6ced6d6c6c6ceb5bdbdbdbdc6d6dedeb5bdbdb5bdbdc6ceced6d6dec6c6cebdc6c6bd
+c6c6d6dedec6c6cebdc6c6c6c6ced6d6d6c6cecec6c6cececececececebdc6c6d6d6d6c6c6cebd
+bdc6ffffffbdc6c6d6d6dec6cecedee7e7ced6d6ced6d6dedee7d6d6ded6dedeced6d68c8c8c42
+4242ffffffcececed6d6d6d6d6d6ffffffefeff7ffffffffffffffffffffffffcecece8484844a
+4a4ac6c6c6b5b5bdffffffdededec6ceced6d6d6d6deded6deded6dedeced6d6ceced6d6deded6
+dede848484424242c6c6c6c6c6c6d6d6d6848484424a4a000000ceced6ffffffd6d6d6848c8c7b
+7b84a5a5a5cececebdbdbd737b7b8c8c94adadb5dedee7a5a5a58c9494cececebdbdbd9494948c
+8c8cb5b5b5cececeb5b5b5949494a5adadcecece9ca5a5bdbdbdceced6a5adad7b8484bdbdc6d6
+dede9ca5a5b5b5b5ced6d6bdbdbd9c9c9c9494949494948c8c8c9ca5a594949c9c9c9cb5b5b5d6
+d6deb5bdbd9c9c9c9c9c9c9c9c9c9c9c9cbdbdbdced6d6b5b5bd949494bdc6c6d6d6d6adb5b5ad
+b5b5ced6d6bdc6c6bdc6c6ced6d6bdc6c69c9ca5adb5b5b5b5b5adb5b5cececec6c6cea5a5a5c6
+c6c6ced6d6bdc6c6adb5b5d6dedec6cecebdc6c6d6d6d6ced6d6b5bdbdc6cececed6d6bdbdc6b5
+bdbdced6d6ced6d6bdbdbdb5b5b5cecececed6d6c6c6c6b5bdbdc6cececed6d6c6cecebdc6c6d6
+d6d6c6cecebdc6c6c6c6ceb5b5bdc6c6cef7ffffced6d6d6deded6d6de00000800000000000800
+0000000008ced6d6ced6d67b7b7b313939ffffffe7e7e7d6d6d684848484848c8c8c8c7b7b7b8c
+8c94848484ffffffd6dede84848c313939bdbdc6cececeffffffc6cececed6d6000000000000ce
+d6d6ced6d6000000000808c6ceced6dede848484313131dededebdb5bdd6d6d684848442424200
+0000ced6d6ffffffd6dede7b8484848c8cadb5b5d6dede9c9ca59c9ca5c6ceced6d6ded6dedead
+adad8c9494d6d6ded6dede8c8c8c8c8484949494adadade7e7e7cececed6d6d6dededea5a5adb5
+bdbdd6d6deadb5b58c9494b5bdc6dee7e7a5adadadadb5cececed6d6d6c6cecee7e7e7dedee7bd
+bdbd9c9c9c9ca5a59c9c9cbdbdbdd6d6d6bdc6c6a5a5a5adadad9c9c9ca5adad9ca5a5bdc6c6ce
+d6d6ced6d6dedededededeadb5b5bdbdbdced6d6c6cecebdc6c6d6dedebdc6c6a5a5a5a5adadb5
+b5b5adb5b5d6dedececed6b5b5b5c6c6ced6dedeb5bdbdbdc6c6d6dedec6ceceadadadc6cecec6
+cecec6c6ced6deded6dedebdbdbdbdbdbdced6d6d6d6d6b5bdbdb5bdbdcececed6d6dec6c6c6bd
+bdbdc6c6c6d6d6dec6cecec6cececed6d6d6d6dececed6b5bdbdc6c6c6cececeffffffd6d6dece
+ced6d6dede000000000008000008000008000000d6dedececed6848c8c4a4a4affffffc6c6c6e7
+efef7b7b7bffffffd6d6d6d6d6d6ced6d67b7b7bffffffd6d6d67b7b7b4a4a4acececec6c6c6ff
+ffffdee7e7d6d6d6dedede080808081010000000000008cececed6dedec6c6c68c8c8c393939c6
+c6c6c6c6c6d6dede848484424a4a000000ced6d6ffffffceced67b84847b8484adb5b5d6d6de9c
+a5a57373738c94947b7b7b848484848484949c9cc6ceced6d6d6cececee7dede8c8c8c8484849c
+9c9c8c8c8cbdbdbdced6d6949c9ca5adadceced6c6cece949c9ca5adb5bdc6ceb5bdbd9ca5a5d6
+d6d6c6c6c69494949c9c9cceced6bdc6c6949494949494a5a5a5bdbdbdd6d6d6adadb59494949c
+9c9c9c9c9c9ca5a594949c9c9c9ca5adada5a5a5bdbdc6c6c6ceb5b5b5a5a5add6d6d6c6ceceb5
+b5bdc6c6c6cececeadb5b5a5adadbdbdbdbdbdbdd6d6d6cececeadadb5c6cececed6d6bdc6c6b5
+bdbdd6d6d6bdc6c6adadadb5bdbdbdc6c6b5bdbdcecececed6d6b5bdbdadb5b5ceced6ced6d6c6
+c6c6b5bdbdc6c6c6ced6d6c6cecebdbdbdc6cececed6d6c6cecebdc6c6cececec6c6ced6d6ded6
+d6d6ceced6b5b5bdffffffc6ceced6dedebdc6c6dee7e7c6cecec6d6d6ced6d6ced6d6ced6d6ce
+d6d6848484393939ffffffd6d6d6c6c6ce8c8c8cffffffd6dedecececedee7e7737373ffffffc6
+c6c67b7b7b424242bdbdbdb5b5bdffffffc6c6c6d6d6d6c6cecec6cece000000000808ceced6d6
+dedededee7ced6d67b7b7b4a4a4ac6c6c6c6c6c6ced6d6848484424242000000d6d6deffffffce
+d6d67b84848484849c9c9cd6dedeb5b5bd84848c8c8c8c848c8c848c8c8c94949c9c9cc6c6c6ce
+ceceadadadcececea5a5a5c6c6c6dee7e7c6c6c6dededeb5b5bd949c9c8c9494adb5b5c6cecece
+d6d6d6deded6dedeadadb58c9494adadadced6d6d6deded6dedec6c6c6adb5b59c9c9c94949c94
+9c9cb5bdbdd6d6d6bdc6c69c9c9ca5a5ada5adad9c9c9cb5b5b5d6d6ded6d6d6ced6d6ced6d6c6
+cecea5a5adb5bdbdd6d6d6cececea5a5adb5b5b5ced6d6dededed6dedecececebdc6c6ced6d6bd
+bdbdadb5b5bdc6c6ced6d6c6c6c6b5bdbdceced6ced6d6bdc6c6cececececed6ced6d6ced6d6ce
+d6d6bdbdbdbdc6c6ced6d6dededececed6c6cecebdc6c6c6c6ceced6d6dededed6d6d6c6ceceb5
+bdbdc6c6cedededed6d6d6c6c6c6ded6debdb5bdcececeffffffced6d6c6ceced6dedeced6d6de
+e7e7c6ceced6dee7bdc6c6cededecedede7b7b7b4a4a4af7f7ffe7e7e7dedede6b6b73fffffff7
+ffffffffffeff7f7949494ffffffdedede9494944a5252bdbdbdcececef7f7f7dededeced6d6d6
+dede000808000808000000000000d6dedeced6d6cecece949494393939bdbdbdc6c6c6d6d6d684
+8484424a4a000000cececeffffffc6cece84848c7b7b7b8c8c8cc6cecececece9ca5a58c8c8c7b
+8484848c8c848484848c8c8c8c8c848c8c8484849494948484849c9c9c848c8c9494949494948c
+8c8c8c8c8c8c94948c94948c949494949cbdc6c6c6ceceadb5b59494949494949494949c9ca594
+949c949c9c949494949c9ca5a5a59494949c9c9cced6d6ced6d6adadad9c9c9c9c9c9c9ca5a59c
+a5a59c9c9ca5a5a5a5a5a5a5adad9ca5a59ca5a5adb5b5cececec6c6c6adadad9ca5a5a5adada5
+adada5adada5adadadadadadb5b5adadada5a5a5b5b5b5adadb5adadadb5bdbdced6d6c6c6c6b5
+b5b5adadadb5bdbdadb5b5b5b5b5adadadb5b5b5bdbdbdcececec6cecebdc6c6b5b5b5b5bdbdbd
+bdbdbdc6c6b5b5b5b5bdbdbdc6c6bdc6c6b5b5bdbdbdbdc6bdc6cec6cebdbdbdcececec6c6c6ff
+ffffceced6dededeced6d6ceced6ced6d6ced6d6c6d6d6d6dedec6ced6c6d6d67b8484424242ff
+ffffced6d6cecece8c9494737b7b8484847b8484848c8c7b7b7bffffffd6d6d67b7b7b313131ce
+cecec6c6c6ffffffced6d6d6dede000000000000d6d6d6ced6d6000000000000ced6d6d6dede7b
+7b7b424242c6c6c6c6c6c6d6d6d6848484424242000000d6dedeffffffd6d6d684848c7b848473
+7b7b949494b5bdbdd6d6d6d6deded6dedec6c6c6adadad8c9494848c8c8484848c8c8c8c8c8c8c
+8c8c8c8c8c8c94948c8c8c8c94948c8c949c9c9c8c8c8c94949c8c94948c9494b5bdbdd6dedead
+adb5949c9c9494949c9c9c94949c9c9c9c949c9c9c9c9c949c9ca5a5a59c9c9c9ca5a5adadadc6
+c6ced6d6d6d6dedeced6d6bdbdc6a5adad9ca5a59c9c9ca5adada5a5a5a5a5a59ca5a5b5b5bdd6
+d6dececed6a5a5ada5adada5adada5adada5adadadadada5adadadadada5adadadb5b5adadadad
+b5b5adadadbdc6c6ced6d6ceced6b5b5b5adb5b5b5b5b5b5b5bdadb5b5b5bdbdb5b5b5c6c6c6ce
+ceced6d6d6c6c6c6bdbdbdb5bdbdbdbdc6b5bdbdbdbdc6bdbdbdbdc6c6bdbdc6bdc6c6bdbdc6c6
+bdc6c6c6c6c6bdc6cececec6c6ceffffffd6dedececed6d6d6deced6d6ced6deced6d6ced6dec6
+d6d6ced6deced6d6848484394242ffffffd6dedececece7b8484848c8c7b84848c8c8c7373738c
+8c8cced6d6d6d6d6848484424242bdbdbdcececeffffffd6d6d6c6c6c6d6d6d6d6d6d6ced6d6d6
+d6d6d6dedec6c6cedee7e7d6d6d68c8c8c424a4abdbdbdc6c6c6d6d6d68c8c8c424242000000ce
+d6d6ffffffc6c6ce84848c7b84848484847b7b7b848c8c737b7b848484848c8c8c8c9484848484
+8c8c848c8c8c94948484848c8c8c848c8c8c8c8c848c8c8c8c8c8c8c8c8c9494848c8c84848c8c
+8c9494949c8c9494b5bdbdceced6b5b5bd949494949494949494949c9c949494949c9c9494949c
+9c9c949c9c9c9c9c94949c9c9c9c9c9ca5a5a5a5a5a5a5a5a5a5a5adada5a5a59c9c9ca5a5a59c
+a5a5a5a5ad9ca5a5a5adada5adadcececebdc6c6a5adada5adadadb5b5a5adadadb5b5a5adadad
+adada5adadadb5b5adadadadb5b5adadb5adb5b5b5bdbdc6cecebdc6c6b5bdbdadb5b5b5bdbdb5
+b5b5b5bdbdadb5b5adb5b5adb5b5bdbdbdb5bdbdb5b5bdb5b5b5bdbdbdb5b5b5b5bdbdb5bdbdbd
+bdbdb5bdbdbdbdc6bdbdbdbdc6c6c6c6c6c6c6c6bdbdbdc6bdc6b5b5bdf7f7ffced6d6d6dedece
+ced6ced6d6ced6d6ced6d6c6ced6ced6d6c6d6d6ced6d67b84844a4a4affffffceced6d6dedede
+e7e7ced6d6ced6d6c6cecee7e7e7ced6d6cececed6d6de7b7b7b394242d6d6d6bdbdbdffffffd6
+deded6deded6deded6d6dececececed6d6c6c6c6e7e7efc6c6c6ced6d6737b7b393939cec6cec6
+c6c6d6d6d6848484393939000000ced6d6ffffffd6d6d6848c8c8484848484848484847b848484
+8c8c848484848c8c848484848c8c848c8c8c94948c8c8c8c94948c8c8c8c94948c948c8c94948c
+94949494948c9494949c9c8c9494949c9c8c94948c9494949c9c9ca5a58c8c949c9c9c94949c9c
+9c9c949c9c9c9c9c949c9c9c9c9c9c9c9c9ca5a59c9c9ca5a5a59c9c9c9c9c9c9494949c9c9c94
+9c9c9c9c9c949c9c9ca5a59ca5a5a5a5a59c9c9ca5a5a5a5a5a59ca5a5adb5b5adb5b59ca5a5a5
+adada5adada5adadadadadadadada5adadadadb5adadadadb5b5adadadadb5b5adadb5adb5b5b5
+b5bdb5bdbdadadb5b5b5b5adb5b5b5b5b5b5b5b5bdbdc6b5b5b5b5bdbdb5bdbdbdbdbdb5b5b5bd
+bdbdbdc6c6bdc6c6bdbdbdbdc6c6bdc6c6bdc6c6bdc6c6c6c6c6c6c6c6c6c6c6bdbdbdc6c6cec6
+c6ced6d6deffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffff313939ffffffffffffe7efeff7fffffffffffffffffffffff7ffffffffffffffffffffffff
+ffff393939b5bdbdd6d6d6ffffffffffffffffffffffffffffffffffffffffffffffffe7efefff
+ffffffffffffffff393939cececec6c6c6dedede7b7b7b424a4a000000d6d6d6ffffffced6d684
+8c8c737b7b848484848484848c8c848c8c848c8c7b8484848484848484848c8c848484848c8c84
+8c848c8c8c848c848c8c8c848c8c8c8c8c848c8c8c8c8c848c8c9494948c8c948c94948c949494
+949c8c8c948c9494949494949c9c94949494949c949494949c9c949494949c9c94949c9c9c9c9c
+9c9c9ca5a59c9c9c9ca5a59c9ca5a5a5a59c9c9ca5a5a59ca5a5a5a5ad9ca5a5a5a5a59ca5a5a5
+a5ad9c9ca5adadada5a5a5a5a5a5a5adadadadada5a5a5adadb5adadadadb5b5adadadadb5b5ad
+adadadb5b5adadb5adb5b5adadadb5b5b5adadadadb5b5b5b5bdb5b5bdadadb5b5bdbdb5b5b5b5
+b5b5adb5b5b5bdbdb5b5bdb5bdbdadb5b5b5bdbdb5b5bdb5bdbdb5b5bdbdbdbdb5bdbdbdbdbdb5
+bdbdbdbdbdc6c6c6bdbdc6bdc6c6bdbdbdb5b5bdc6c6ceb5b5bdbdc6c6bdc6c6c6c6cebdc6c6bd
+c6c6bdc6c6bdc6cebdc6c6bdc6c6b5bdbdc6cecebdc6c6adb5b5ced6d6c6cecebdc6c6bdbdc6bd
+bdbdced6d6a5adadc6c6c6c6cecec6c6c6bdbdc6c6ceceadb5b5c6c6cebdbdbdc6c6cebdc6c6bd
+bdbdbdc6c6bdc6c6adadadced6d6c6c6c6ced6d6adadadc6c6c6c6c6c6bdbdc6d6d6d67b7b7b42
+4242000000dededef7ffffc6cece84848c848c8c8c8c8c8c8c8c7b7b7b848c8c848484848c8c84
+848c8c8c8c848c8c8c8c948c8c8c8c94948c8c8c8c94948c8c8c8c94948c948c8c94948c8c948c
+94948c949494949c8c94949c9ca594949c94949c9c9ca59c9c9c949c9c9c9c9c949c9c9c9c9c94
+9c9c9c9c9c949c9c9c9ca59c9c9c9c9ca59c9c9ca5a5a59c9ca5a5a5a59c9c9ca5a5ad9ca5a5a5
+a5a59ca5a5a5a5a59ca5a5a5a5a59ca5a5a5adada5a5a5a5adada5a5adadb5b5a5adada5adada5
+adadadadada5adadadadada5adadadadb5a5adadadadb5a5adadadb5b5adadadadadadadadadb5
+bdbdadb5b5adb5b5adb5b5bdbdbdb5b5bdbdbdbdb5bdbdbdc6c6b5bdbdbdbdbdb5bdbdbdc6c6bd
+bdbdbdc6c6bdbdbdbdc6c6bdbdc6bdc6c6bdbdc6bdc6c6bdbdbdc6cecec6c6c6cececec6c6cec6
+c6cec6cecec6c6cebdc6c6bdc6c6bdc6c6c6c6cebdc6c6bdc6c6bdc6c6ced6d6bdc6c6bdbdbdbd
+c6c6ced6d6bdbdbdb5b5b5c6c6cec6ceceb5bdbdced6d6cececebdc6c6adb5b5cececebdbdbdce
+ced6cec6cec6c6c6c6c6c6c6cecebdbdbdc6cecebdc6c6d6d6d6b5bdbdc6c6c6b5b5b5bdc6c6c6
+ceceb5b5b5cec6ced6dede7b7b7b424242000000ced6d6ffffffe7e7efceced6cecececed6d6ce
+cecececececed6d6d6d6d6d6d6d6d6d6deced6d6ced6d6cecececed6d6ced6ceced6d6ced6d6d6
+d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6deced6d6ced6d6ceced6ceced6c6c6ced6d6d6ce
+d6d6d6d6d6d6d6d6d6d6d6ced6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6ced6d6d6d6d6d6d6d6d6
+d6ded6d6d6d6d6d6ced6d6ced6d6cececececed6cececed6d6d6ced6d6d6d6d6ced6d6d6d6d6ce
+d6d6d6d6deced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6
+dedeced6d6d6d6deced6d6d6d6d6d6d6ded6dedeced6d6d6dedeced6d6ced6d6cecececed6d6ce
+cececed6d6ced6d6d6d6deced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6deced6d6d6
+d6ded6d6d6d6d6deced6d6ceced6ceced6ced6d6ced6d6d6d6deced6d6d6d6deced6d6d6d6dece
+d6d6d6d6dec6ceced6dedec6ceced6dedececececed6d6dededeced6d6ced6d6c6cecebdc6c6d6
+d6d6ceced6dee7e7ced6d6d6dedececececececececececececed6d6d6d6d6d6d6d6d6d6d6dec6
+ceced6d6d6ceced6d6dedededededededececed6d6d6d6dedede848484313131000000d6dedeff
+fffffffffffffffffffffff7ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffffffffffffffffffffffffffffffff7fffffffffffffffff7fffffffffff7
+ffffffffffffffffffffffffffffffffffffffffeff7f7fffffff7ffffffffffffffffffffffff
+fffffffffffffffffffffff7fffffffffffffffff7fffffffffffffffff7f7ffffffffffffffe7
+e7e7a5a5a5393939000000c6ceced6dedec6cececed6d6dededed6d6d6cececed6d6d6d6d6ded6
+d6dececed6ced6d6ced6d6d6dedeced6d6ced6d6ced6ceced6d6cecececed6d6ced6d6d6d6d6ce
+ced6ced6d6ceced6ced6d6d6d6d6d6d6dececed6d6d6d6d6d6d6ceced6d6d6d6d6d6ded6d6d6d6
+d6d6d6d6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6dece
+ced6d6deded6d6d6ced6d6ceced6d6d6d6ced6d6ced6d6ced6d6d6d6d6d6d6d6d6d6d6cececed6
+d6d6d6d6d6d6d6d6ceced6d6d6d6ceced6ced6d6ced6d6d6d6d6ceced6d6d6d6cececed6dedece
+d6d6ced6d6ced6d6d6d6d6ced6d6d6d6d6cececed6d6d6ced6d6d6d6d6ced6d6d6d6deced6d6ce
+d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ced6d6d6d6d6ceced6d6dedec6ceced6d6dece
+ced6d6dedeced6d6ceced6ced6d6d6d6dececed6d6d6d6ced6d6d6d6dececed6d6d6d6d6d6dece
+d6d6c6ceced6dedececed6ced6d6c6cececed6d6cececed6dedec6c6c6d6dedec6c6c6d6d6dece
+d6d6d6dedecececed6d6d6d6d6d6c6c6c6d6d6ded6d6d6cececed6dedecececedededec6c6ced6
+dedecececed6deded6d6d6cececedededececece424242000000040000002701ffff0300000000
+00
+}\par
+\par
+}
+ 

@@ -1,0 +1,22 @@
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\PixelPatterns\bin\Debug\PixelPatterns.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\PixelPatterns\bin\Debug\PixelPatterns.pdb
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\PixelPatterns\bin\Debug\PixelPatterns.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\PixelPatterns\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\PixelPatterns\obj\x86\Debug\PixelPatterns.Form1.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\PixelPatterns\obj\x86\Debug\PixelPatterns.Resources.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\PixelPatterns\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\PixelPatterns\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\PixelPatterns\obj\x86\Debug\PixelPatterns.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\PixelPatterns\obj\x86\Debug\PixelPatterns.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\PixelPatterns\obj\x86\Debug\PixelPatterns.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\PixelPatterns\PixelPatterns\obj\x86\Debug\PixelPatterns.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\PixelPatterns\PixelPatterns\obj\x86\Debug\PixelPatterns.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\PixelPatterns\PixelPatterns\obj\x86\Debug\PixelPatterns.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\PixelPatterns\PixelPatterns\bin\Debug\PixelPatterns.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\PixelPatterns\PixelPatterns\bin\Debug\PixelPatterns.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\PixelPatterns\PixelPatterns\bin\Debug\PixelPatterns.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\PixelPatterns\PixelPatterns\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\PixelPatterns\PixelPatterns\obj\x86\Debug\PixelPatterns.Resources.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\PixelPatterns\PixelPatterns\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\PixelPatterns\PixelPatterns\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\PixelPatterns\PixelPatterns\obj\x86\Debug\PixelPatterns.frmPixelPatterns.resources

@@ -1,0 +1,22 @@
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Starfeild\bin\Debug\Starfeild.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Starfeild\bin\Debug\Starfeild.pdb
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Starfeild\bin\Debug\Starfeild.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Starfeild\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Starfeild\obj\x86\Debug\Starfeild.frmMain.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Starfeild\obj\x86\Debug\Starfeild.Resources.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Starfeild\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Starfeild\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Starfeild\obj\x86\Debug\Starfeild.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Starfeild\obj\x86\Debug\Starfeild.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\Starfeild\obj\x86\Debug\Starfeild.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Starfeild\Starfeild\obj\x86\Debug\Starfeild.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Starfeild\Starfeild\obj\x86\Debug\Starfeild.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Starfeild\Starfeild\obj\x86\Debug\Starfeild.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Starfeild\Starfeild\bin\Debug\Starfeild.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Starfeild\Starfeild\bin\Debug\Starfeild.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Starfeild\Starfeild\bin\Debug\Starfeild.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Starfeild\Starfeild\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Starfeild\Starfeild\obj\x86\Debug\Starfeild.frmMain.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Starfeild\Starfeild\obj\x86\Debug\Starfeild.Resources.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Starfeild\Starfeild\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\Starfeild\Starfeild\obj\x86\Debug\GenerateResource.write.1.tlog

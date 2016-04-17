@@ -1,0 +1,22 @@
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\CrapsGame\bin\Debug\CrapsGame.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\CrapsGame\bin\Debug\CrapsGame.pdb
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\CrapsGame\bin\Debug\CrapsGame.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\CrapsGame\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\CrapsGame\obj\x86\Debug\CrapsGame.Form1.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\CrapsGame\obj\x86\Debug\CrapsGame.Resources.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\CrapsGame\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\CrapsGame\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\CrapsGame\obj\x86\Debug\CrapsGame.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\CrapsGame\obj\x86\Debug\CrapsGame.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\CrapsGame\obj\x86\Debug\CrapsGame.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CrapsGame\CrapsGame\obj\x86\Debug\CrapsGame.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CrapsGame\CrapsGame\obj\x86\Debug\CrapsGame.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CrapsGame\CrapsGame\obj\x86\Debug\CrapsGame.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CrapsGame\CrapsGame\bin\Debug\CrapsGame.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CrapsGame\CrapsGame\bin\Debug\CrapsGame.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CrapsGame\CrapsGame\bin\Debug\CrapsGame.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CrapsGame\CrapsGame\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CrapsGame\CrapsGame\obj\x86\Debug\CrapsGame.Resources.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CrapsGame\CrapsGame\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CrapsGame\CrapsGame\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CrapsGame\CrapsGame\obj\x86\Debug\CrapsGame.frmMain.resources

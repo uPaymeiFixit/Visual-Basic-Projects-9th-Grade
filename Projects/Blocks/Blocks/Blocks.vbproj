@@ -1,0 +1,2456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CFA8C60F-DD57-448C-B8C1-813EDBF3D481}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Blocks.My.MyApplication</StartupObject>
+    <RootNamespace>Blocks</RootNamespace>
+    <AssemblyName>Blocks</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Blocks.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Blocks.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCharactersList.Designer.vb">
+      <DependentUpon>frmCharactersList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCharactersList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGameOver.Designer.vb">
+      <DependentUpon>frmGameOver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGameOver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGameplay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGameplay.Designer.vb">
+      <DependentUpon>frmGameplay.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectedCharacterInfo.Designer.vb">
+      <DependentUpon>frmSelectedCharacterInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectedCharacterInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStartMenu.Designer.vb">
+      <DependentUpon>frmStartMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStartMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransparantLayer.Designer.vb">
+      <DependentUpon>frmTransparantLayer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransparantLayer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmCharactersList.resx">
+      <DependentUpon>frmCharactersList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGameOver.resx">
+      <DependentUpon>frmGameOver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGameplay.resx">
+      <DependentUpon>frmGameplay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectedCharacterInfo.resx">
+      <DependentUpon>frmSelectedCharacterInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStartMenu.resx">
+      <DependentUpon>frmStartMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransparantLayer.resx">
+      <DependentUpon>frmTransparantLayer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnMainMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmPlayersEasyBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmPlayersHardBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmPlayersMediumBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBackOver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPlayOver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmLockedPlayerInfoBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmPlayerInfoBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5easy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5easyDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5hard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5hardDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5mediumDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10easy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10easyDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10hard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10hardDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10mediumDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15easy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15easyDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15hard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15hardDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15mediumDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20easy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20easyDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20hard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20hardDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20mediumDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25easy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25easyDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25hard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25hardDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25mediumDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\glaze.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\overlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayerBounds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players1over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players2over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players3over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players4over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players5over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players6over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players7over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players8over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players9over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players10over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players11over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players12over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players13over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players14over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players15over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players16over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players17over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\PlayersWithOverlay\players18over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\RAWPlayers\player1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\RAWPlayers\player2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\RAWPlayers\player3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\RAWPlayers\player4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\RAWPlayers\player5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\RAWPlayers\player6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\RAWPlayers\player7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\RAWPlayers\player8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\RAWPlayers\player9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\RAWPlayers\player10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\RAWPlayers\player11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\RAWPlayers\player12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\RAWPlayers\player13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\RAWPlayers\player14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\RAWPlayers\player15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\RAWPlayers\player16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\RAWPlayers\player17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmCharactersResources\PlayerImages\RAWPlayers\player18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmEndResources\frmEndMain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmMainResources\picBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmMainResources\picPauseDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmMainResources\picPauseUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmMainResources\picPlayDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmMainResources\picPlayUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmSplashResources\btnEasy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmSplashResources\btnHard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmSplashResources\btnHardDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmSplashResources\btnInstructions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmSplashResources\btnMedium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmSplashResources\btnMediumDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmSplashResources\frmStartBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmMainResources\Sounds\invincible.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmMainResources\Sounds\songBackgroundMusic.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\frmMainResources\Sounds\thud.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue220.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player1\Player1Hue360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue220.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player2\Player2Hue360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue220.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player3\Player3Hue360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue220.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player4\Player4Hue360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue220.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player5\Player5Hue360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue220.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player6\Player6Hue360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue220.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player7\Player7Hue360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue220.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player8\Player8Hue360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue220.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player9\Player9Hue360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue220.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player10\Player10Hue360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue220.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player11\Player11Hue360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue220.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player12\Player12Hue360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue220.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player13\Player13Hue360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue220.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player14\Player14Hue360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue220.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player15\Player15Hue360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue220.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player16\Player16Hue360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue220.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player17\Player17Hue360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue220.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\DotsGamePlayerImages\PlayerHue\Player18\Player18Hue360.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

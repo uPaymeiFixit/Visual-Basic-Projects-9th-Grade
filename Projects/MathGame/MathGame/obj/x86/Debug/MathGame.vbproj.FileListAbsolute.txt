@@ -1,0 +1,24 @@
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\MathGame\bin\Debug\MathGame.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\MathGame\bin\Debug\MathGame.pdb
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\MathGame\bin\Debug\MathGame.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\MathGame\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\MathGame\obj\x86\Debug\MathGame.frmMain.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\MathGame\obj\x86\Debug\MathGame.Resources.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\MathGame\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\MathGame\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\MathGame\obj\x86\Debug\MathGame.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\MathGame\obj\x86\Debug\MathGame.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\MathGame\obj\x86\Debug\MathGame.pdb
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\MathGame\obj\x86\Debug\MathGame.ChangeSettings.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\MathGame\MathGame\obj\x86\Debug\MathGame.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\MathGame\MathGame\obj\x86\Debug\MathGame.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\MathGame\MathGame\obj\x86\Debug\MathGame.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\MathGame\MathGame\bin\Debug\MathGame.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\MathGame\MathGame\bin\Debug\MathGame.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\MathGame\MathGame\bin\Debug\MathGame.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\MathGame\MathGame\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\MathGame\MathGame\obj\x86\Debug\MathGame.ChangeSettings.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\MathGame\MathGame\obj\x86\Debug\MathGame.frmMain.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\MathGame\MathGame\obj\x86\Debug\MathGame.Resources.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\MathGame\MathGame\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\MathGame\MathGame\obj\x86\Debug\GenerateResource.write.1.tlog

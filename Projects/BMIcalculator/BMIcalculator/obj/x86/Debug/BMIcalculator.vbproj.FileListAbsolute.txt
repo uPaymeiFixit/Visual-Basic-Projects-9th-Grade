@@ -1,0 +1,22 @@
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\BMIcalculator\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\BMIcalculator\obj\x86\Debug\BMIcalculator.frmMain.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\BMIcalculator\obj\x86\Debug\BMIcalculator.Resources.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\BMIcalculator\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\BMIcalculator\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\BMIcalculator\bin\Debug\BMIcalculator.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\BMIcalculator\bin\Debug\BMIcalculator.pdb
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\BMIcalculator\bin\Debug\BMIcalculator.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\BMIcalculator\obj\x86\Debug\BMIcalculator.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\BMIcalculator\obj\x86\Debug\BMIcalculator.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\BMIcalculator\obj\x86\Debug\BMIcalculator.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\BMIcalculator\BMIcalculator\obj\x86\Debug\BMIcalculator.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\BMIcalculator\BMIcalculator\obj\x86\Debug\BMIcalculator.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\BMIcalculator\BMIcalculator\obj\x86\Debug\BMIcalculator.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\BMIcalculator\BMIcalculator\bin\Debug\BMIcalculator.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\BMIcalculator\BMIcalculator\bin\Debug\BMIcalculator.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\BMIcalculator\BMIcalculator\bin\Debug\BMIcalculator.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\BMIcalculator\BMIcalculator\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\BMIcalculator\BMIcalculator\obj\x86\Debug\BMIcalculator.frmMain.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\BMIcalculator\BMIcalculator\obj\x86\Debug\BMIcalculator.Resources.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\BMIcalculator\BMIcalculator\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\BMIcalculator\BMIcalculator\obj\x86\Debug\GenerateResource.write.1.tlog

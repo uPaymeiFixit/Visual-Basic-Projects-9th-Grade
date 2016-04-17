@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Basic Express 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Fish2D", "Fish2D\Fish2D.vbproj", "{FE820CAD-6AE6-4FD8-923B-70A9B9C6B864}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE820CAD-6AE6-4FD8-923B-70A9B9C6B864}.Debug|x86.ActiveCfg = Debug|x86
+		{FE820CAD-6AE6-4FD8-923B-70A9B9C6B864}.Debug|x86.Build.0 = Debug|x86
+		{FE820CAD-6AE6-4FD8-923B-70A9B9C6B864}.Release|x86.ActiveCfg = Release|x86
+		{FE820CAD-6AE6-4FD8-923B-70A9B9C6B864}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,22 @@
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\EvansGame\bin\Debug\EvansGame.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\EvansGame\bin\Debug\EvansGame.pdb
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\EvansGame\bin\Debug\EvansGame.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\EvansGame\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\EvansGame\obj\x86\Debug\EvansGame.Form1.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\EvansGame\obj\x86\Debug\EvansGame.Resources.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\EvansGame\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\EvansGame\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\EvansGame\obj\x86\Debug\EvansGame.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\EvansGame\obj\x86\Debug\EvansGame.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\EvansGame\obj\x86\Debug\EvansGame.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\EvansGame\EvansGame\obj\x86\Debug\EvansGame.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\EvansGame\EvansGame\obj\x86\Debug\EvansGame.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\EvansGame\EvansGame\obj\x86\Debug\EvansGame.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\EvansGame\EvansGame\bin\Debug\EvansGame.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\EvansGame\EvansGame\bin\Debug\EvansGame.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\EvansGame\EvansGame\bin\Debug\EvansGame.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\EvansGame\EvansGame\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\EvansGame\EvansGame\obj\x86\Debug\EvansGame.Form1.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\EvansGame\EvansGame\obj\x86\Debug\EvansGame.Resources.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\EvansGame\EvansGame\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\EvansGame\EvansGame\obj\x86\Debug\GenerateResource.write.1.tlog

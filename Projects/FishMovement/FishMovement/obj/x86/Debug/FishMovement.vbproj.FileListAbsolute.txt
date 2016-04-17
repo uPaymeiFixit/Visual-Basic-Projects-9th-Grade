@@ -1,0 +1,22 @@
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\FishMovement\bin\Debug\FishMovement.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\FishMovement\bin\Debug\FishMovement.pdb
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\FishMovement\bin\Debug\FishMovement.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\FishMovement\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\FishMovement\obj\x86\Debug\FishMovement.frmMain.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\FishMovement\obj\x86\Debug\FishMovement.Resources.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\FishMovement\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\FishMovement\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\FishMovement\obj\x86\Debug\FishMovement.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\FishMovement\obj\x86\Debug\FishMovement.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\FishMovement\obj\x86\Debug\FishMovement.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\FishMovement\FishMovement\obj\x86\Debug\FishMovement.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\FishMovement\FishMovement\obj\x86\Debug\FishMovement.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\FishMovement\FishMovement\obj\x86\Debug\FishMovement.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\FishMovement\FishMovement\bin\Debug\FishMovement.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\FishMovement\FishMovement\bin\Debug\FishMovement.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\FishMovement\FishMovement\bin\Debug\FishMovement.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\FishMovement\FishMovement\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\FishMovement\FishMovement\obj\x86\Debug\FishMovement.frmMain.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\FishMovement\FishMovement\obj\x86\Debug\FishMovement.Resources.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\FishMovement\FishMovement\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\FishMovement\FishMovement\obj\x86\Debug\GenerateResource.write.1.tlog

@@ -1,0 +1,23 @@
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\CheatEnginePractice\bin\Debug\CheatEnginePractice.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\CheatEnginePractice\bin\Debug\CheatEnginePractice.pdb
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\CheatEnginePractice\bin\Debug\CheatEnginePractice.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\CheatEnginePractice\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\CheatEnginePractice\obj\x86\Debug\CheatEnginePractice.frmCheatEnginePractice.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\CheatEnginePractice\obj\x86\Debug\CheatEnginePractice.Resources.resources
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\CheatEnginePractice\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\CheatEnginePractice\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\CheatEnginePractice\obj\x86\Debug\CheatEnginePractice.exe
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\CheatEnginePractice\obj\x86\Debug\CheatEnginePractice.xml
+C:\Users\Josh Gibbs\AppData\Local\Temporary Projects\CheatEnginePractice\obj\x86\Debug\CheatEnginePractice.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CheatEnginePractice\CheatEnginePractice\obj\x86\Debug\CheatEnginePractice.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CheatEnginePractice\CheatEnginePractice\obj\x86\Debug\CheatEnginePractice.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CheatEnginePractice\CheatEnginePractice\obj\x86\Debug\CheatEnginePractice.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CheatEnginePractice\CheatEnginePractice\bin\Debug\CheatEnginePractice.exe
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CheatEnginePractice\CheatEnginePractice\bin\Debug\CheatEnginePractice.pdb
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CheatEnginePractice\CheatEnginePractice\bin\Debug\CheatEnginePractice.xml
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CheatEnginePractice\CheatEnginePractice\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CheatEnginePractice\CheatEnginePractice\obj\x86\Debug\CheatEnginePractice.Resources.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CheatEnginePractice\CheatEnginePractice\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CheatEnginePractice\CheatEnginePractice\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CheatEnginePractice\CheatEnginePractice\obj\x86\Debug\CheatEnginePractice.frmMain.resources
+C:\Users\Josh Gibbs\documents\visual studio 2010\Projects\CheatEnginePractice\CheatEnginePractice\obj\x86\Debug\CheatEnginePractice.frmShowCode.resources
